@@ -5,14 +5,16 @@ This package is a tomato farm simulator compatible with both Gazebo Sim and Gaze
 2) Simulation of the generated tomato farms in Gazebo Classic and Gazebo Sim
 
 Gazebo Classic 
-![Gazebo Classic - Tomato Farm Entire Field](docs/GazeboClassic_Farm01.png?raw=true | width=100)
 
-![Gazebo Classic - Tomato Farm Close-up View](docs/GazeboClassic_Farm02.png?raw=true | width=100)
+![Gazebo Classic - Tomato Farm Entire Field](docs/GazeboClassic_Farm01.png?raw=true )
+
+![Gazebo Classic - Tomato Farm Close-up View](docs/GazeboClassic_Farm02.png?raw=true )
 
 Gazebo Sim
-![Gazebo Sim - Tomato Farm Entire Field](docs/GazeboSim_Farm01.png?raw=true | width=100)
 
-![Gazebo Sim - Tomato Farm Close-up View](docs/GazeboSim_Farm02.png?raw=true | width=100)
+![Gazebo Sim - Tomato Farm Entire Field](docs/GazeboSim_Farm01.png?raw=true )
+
+![Gazebo Sim - Tomato Farm Close-up View](docs/GazeboSim_Farm02.png?raw=true )
 
 # Environment Template
 1) Placeholders for specific map files
