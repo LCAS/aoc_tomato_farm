@@ -8,7 +8,7 @@ Gazebo Classic
 
 ![Gazebo Classic - Tomato Farm Entire Field](docs/GazeboClassic_Farm01.png?raw=true )
 
-<img src="docs/GazeboClassic_Farm01.png" width="100" height="100">
+<img src="docs/GazeboClassic_Farm01.png" width="250" > <img src="docs/GazeboClassic_Farm02.png" width="250" >
 
 ![Gazebo Classic - Tomato Farm Close-up View](docs/GazeboClassic_Farm02.png?raw=true )
 
