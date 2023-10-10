@@ -1,5 +1,18 @@
+# Tomato Farm Environment
+This package is a tomato farm simulator compatible with both Gazebo Sim and Gazebo Classic in ROS2 for ROS-based agricultural environments. This repository consists of four key parts
+
+1) Random tomato farm generator
+2) Simulation of the generated tomato farms in Gazebo Classic and Gazebo Sim
+
+![](https://github.com/yilmazabdurrah/aoc_tomato_farm/blob/main/docs/GazeboClassic_Farm01.png?raw=true)
+
+![](https://github.com/yilmazabdurrah/aoc_tomato_farm/blob/main/docs/GazeboClassic_Farm02.png?raw=true)
+
+![](https://github.com/yilmazabdurrah/aoc_tomato_farm/blob/main/docs/GazeboSim_Farm01.png?raw=true)
+
+![](https://github.com/yilmazabdurrah/aoc_tomato_farm/blob/main/docs/GazeboSim_Farm02.png?raw=true)
+
 # Environment Template
-This package is a Template for ROS-based agricultural environments. This repository consists of four key parts
 1) Placeholders for specific map files
 2) Generators to construct missing map files
 3) Procedural generation tools for robustness evaluation maps
