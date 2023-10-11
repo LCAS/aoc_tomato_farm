@@ -21,7 +21,7 @@ def generate_launch_description():
   pkg_share = FindPackageShare(package='aoc_tomato_farm_gazebo').find('aoc_tomato_farm_gazebo')
  
   # Set the path to the world file
-  farm = '22mx14m' # Choose the farm model to be used
+  farm = '8mx7m' # Choose the farm model to be used
   world_file_name = 'tomato_farm_' + farm + '_gazebo_classic.world' # Choose world based on the farm to be desired
   world_path = os.path.join(pkg_share, 'worlds', farm, world_file_name)
    
