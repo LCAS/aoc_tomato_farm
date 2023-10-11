@@ -1,0 +1,15 @@
+{
+    "models": {
+        "list":
+            {
+                "model": "model_name",
+                "name": "instance_name",
+                "pose": "0 0 0 0 0 0"
+            }
+        
+    },
+    "world_name": "tomato.world",
+    "farm_area_x": "10.0",
+    "farm_area_y": "10.0",
+    "worlds": "worlds"
+}
