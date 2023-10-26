@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="panda">
+    <!-- publishing the joint states to the /JointState topic-->
+    <gazebo>
+        <plugin name="gazebo_ros_joint_state_publisher"
+            filename="libgazebo_ros_joint_state_publisher.so">
+            <update_rate>1000</update_rate>
+            <joint_name>panda_joint1</joint_name>
+            <joint_name>panda_joint2</joint_name>
+            <joint_name>panda_joint3</joint_name>
+            <joint_name>panda_joint4</joint_name>
+            <joint_name>panda_joint5</joint_name>
+            <joint_name>panda_joint6</joint_name>
+            <joint_name>panda_joint7</joint_name>
+        </plugin>
+    </gazebo>
+    <xacro:property name="robot_name" value="panda" />
+
+    <!-- Friction parameters-->
+    <gazebo reference="${robot_name}_link0">
+        <kp>0.0</kp>
+        <kd>0.0</kd>
+        <min_depth>0</min_depth>
+
+        <!-- <max_vel>0</max_vel> -->
+
+        <slip1>0</slip1>
+        <slip2>0</slip2>
+        <mu1>0</mu1>
+        <mu2>0</mu2>
+    </gazebo>
+
+    <!-- Link1 -->
+    <gazebo reference="${robot_name}_link1">
+        <kp>0.0</kp>
+        <kd>0.0</kd>
+        <min_depth>0</min_depth>
+
+        <!-- <max_vel>0</max_vel> -->
+
+        <slip1>0</slip1>
+        <slip2>0</slip2>
+        <mu1>0</mu1>
+        <mu2>0</mu2>
+    </gazebo>
+
+    <!-- Link2 -->
+    <gazebo reference="${robot_name}_link2">
+        <mu1>0.61</mu1>
+        <mu2>0.61</mu2>
+    </gazebo>
+
+    <!-- Link3 -->
+    <gazebo reference="${robot_name}_link3">
+        <mu1>0.61</mu1>
+        <mu2>0.61</mu2>
+    </gazebo>
+
+    <!-- Link4 -->
+    <gazebo reference="${robot_name}_link4">
+        <mu1>0.61</mu1>
+        <mu2>0.61</mu2>
+    </gazebo>
+
+    <!-- Link5 -->
+    <gazebo reference="${robot_name}_link5">
+        <mu1>0.61</mu1>
+        <mu2>0.61</mu2>
+    </gazebo>
+
+    <!-- Link6 -->
+    <gazebo reference="${robot_name}_link6">
+
+        <kp>100000.0</kp>
+        <kd>100.0</kd>
+        <min_depth>0</min_depth>
+
+        <!-- <max_vel>0</max_vel> -->
+
+        <slip1>0.2</slip1>
+        <slip2>0.2</slip2>
+        <mu>0.81</mu>
+        <mu2>0.5</mu2>
+    </gazebo>
+
+    <gazebo reference="${robot_name}_link7">
+
+        <!-- <kp>50000.0</kp> -->
+        <kp>50000.0</kp>
+        <kd>1.0</kd>
+        <min_depth>0</min_depth>
+
+        <!-- <max_vel>0</max_vel> -->
+
+        <slip1>0</slip1>
+        <slip2>0</slip2>
+        <mu1>0</mu1>
+        <mu2>0</mu2>
+    </gazebo>
+</robot>

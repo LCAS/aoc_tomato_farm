@@ -1,0 +1,1850 @@
+<?xml version="1.0"?>
+
+<sdf version="1.5">
+  <world name="default">
+
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- A ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+
+    <model name='table'>
+      <static>1</static>
+      <pose>0.5 0 0.15 0 0 0</pose>
+      <link name='link'>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>0.75 0.75 0.3</size>
+            </box>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <box>
+              <size>0.75 0.75 0.3</size>
+            </box>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <model name="piece11">
+      <pose>0.235 -0.266 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+    <model name="piece12">
+      <pose>0.235 -0.19 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+    <model name="piece13">
+      <pose>0.235 -0.114 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+    <model name="piece14">
+      <pose>0.235 -0.038 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+    <model name="piece15">
+      <pose>0.235 0.038 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+
+    <model name="piece16">
+      <pose>0.235 +0.114 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+    <model name="piece17">
+      <pose>0.235 0.19 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+    <model name="piece18">
+      <pose>0.235 0.266 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+    <model name="piece21">
+      <pose>0.311 -0.266 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.3</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>100000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+    <model name="piece22">
+      <pose>0.311 -0.19 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+    <model name="piece23">
+      <pose>0.311 -0.114 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+    <model name="piece24">
+      <pose>0.311 -0.038 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+    <model name="piece25">
+      <pose>0.311 0.038 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+    <model name="piece26">
+      <pose>0.311 +0.114 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+    <model name="piece27">
+      <pose>0.311 0.19 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+    <model name="piece28">
+      <pose>0.311 0.266 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+
+    <model name="piece81">
+      <pose>0.767 -0.266 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+    <model name="piece82">
+      <pose>0.767 -0.19 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+    <model name="piece83">
+      <pose>0.767 -0.114 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+    <model name="piece84">
+      <pose>0.767 -0.038 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+    <model name="piece85">
+      <pose>0.767 0.038 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+    <model name="piece86">
+      <pose>0.767 +0.114 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+    <model name="piece87">
+      <pose>0.767 0.19 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+    <model name="piece88">
+      <pose>0.767 0.266 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+    <model name="piece71">
+      <pose>0.691 -0.266 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+    <model name="piece72">
+      <pose>0.691 -0.19 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+    <model name="piece73">
+      <pose>0.691 -0.114 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+    <model name="piece74">
+      <pose>0.691 -0.038 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+    <model name="piece75">
+      <pose>0.691 0.038 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+    <model name="piece76">
+      <pose>0.691 +0.114 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+    <model name="piece77">
+      <pose>0.691 0.19 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+    <model name="piece78">
+      <pose>0.691 0.266 0.33 0 0 0</pose>
+      <link name="box">
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>2</ixx>
+            <ixy>0.0</ixy>
+            <ixz>0.0</ixz>
+            <iyy>2</iyy>
+            <iyz>0.0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <visual name="first">
+          <pose>0 0 0 0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.015 0.015 0.04</size>
+            </box>
+          </geometry>
+        </visual>
+
+        <collision name="first">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.04</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <slip1>0.1</slip1>
+                <slip2>0</slip2>
+                <mu>1</mu>
+                <mu2>0</mu2>
+                <!-- <fdir1>0 0 0</fdir1> -->
+              </ode>
+            </friction>
+
+            <contact>
+              <ode>
+                <kp>10000.0</kp>
+                <kd>1.0</kd>
+                <min_depth>0</min_depth>
+                <!-- <max_vel>1.0</max_vel> -->
+              </ode>
+            </contact>
+
+          </surface>
+        </collision>
+
+      </link>
+    </model>
+
+
+    <include>
+      <uri>model://chessboard</uri>
+      <pose>0.5 0 0.281 0 0 1.5708</pose>
+      <static>1</static>
+    </include>
+  </world>
+</sdf>
