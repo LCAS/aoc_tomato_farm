@@ -44,9 +44,9 @@ ros2 launch aoc_tomato_farm_gazebo tomato_farm_world_mobile_manipulator_001.laun
 
 PS: Adjust parameters in **mobile_manipulator_001.urdf.xacro** file in **dogtooth/dogtooth_description/urdf** folder  
 
-spawn_manipulator: true -> Spawn Franka Arm
-spawn_mobile_robot: true -> Spawn Dogtooth Mobile Robot
-If both are true, spawn mobile manipulator (Dogtooth Mobile Robot equipped with Franka Arm)
+'*' spawn_manipulator: true -> Spawn Franka Arm
+'*' spawn_mobile_robot: true -> Spawn Dogtooth Mobile Robot
+'*' If both are true, spawn mobile manipulator (Dogtooth Mobile Robot equipped with Franka Arm)
 
 To control the mobile platform 
 
