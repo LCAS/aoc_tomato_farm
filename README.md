@@ -62,6 +62,8 @@ To control the robot arm
 ros2 run franka controller -1.57 +0.67 0 0 0 1.3 -2.3 0
 ```
 
+<img src="docs/MobileManipulator_in_TomatoFarm_01.png" width="800" >
+
 # Environment Template
 1) Placeholders for specific map files
 2) Generators to construct missing map files
