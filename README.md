@@ -26,7 +26,9 @@ Run Jupyter Notebook
 jupyter notebook tomato_gen_Gazebo_Sim_and_Classic.ipyn
 ```
 
-In this file, the farm size, the number of rows, the number of plants in each row, the distance between each plant and each row can be parametrically adjusted. Each plant in the farm is generated randomly, including locations of stems, leaves, fruits and so on. The generated tomato farm tomato models and world files, both compatible with Gazebo Sim and Gazebo Classic are saved in **gazebo_tomato_farm_generator/generated** folder. To use generated tomato farm in simulation, copy files in **gazebo_tomato_farm_generator/generated** folder into **aoc_tomato_farm_gazebo/models** and **aoc_tomato_farm_gazebo/worlds** folders and modify launch file (tomato_farm_world_mobile_manipulator_001.launch.py) accordingly.
+In this file, the farm size, the number of rows, the number of plants in each row, the distance between each plant and each row can be parametrically adjusted. Each plant in the farm is generated randomly, including locations of stems, leaves, fruits and so on. The generated tomato farm tomato models and world files, both compatible with Gazebo Sim and Gazebo Classic are saved in **gazebo_tomato_farm_generator/generated** folder. 
+
+To use generated tomato farm in simulation, copy files in **gazebo_tomato_farm_generator/generated** folder into **aoc_tomato_farm_gazebo/models** and **aoc_tomato_farm_gazebo/worlds** folders and modify launch file (tomato_farm_world_mobile_manipulator_001.launch.py) accordingly.
 
 # Run Gazebo Simulation
 
@@ -44,9 +46,9 @@ ros2 launch aoc_tomato_farm_gazebo tomato_farm_world_mobile_manipulator_001.laun
 
 PS: Adjust parameters in **mobile_manipulator_001.urdf.xacro** file in **dogtooth/dogtooth_description/urdf** folder  
 
-* spawn_manipulator: true -> Spawn Franka Arm
-* spawn_mobile_robot: true -> Spawn Dogtooth Mobile Robot
-* If both are true, spawn mobile manipulator (Dogtooth Mobile Robot equipped with Franka Arm)
+* spawn_manipulator: true/false -> To spawn Franka Arm
+* spawn_mobile_robot: true/false -> To spawn Dogtooth Mobile Robot
+* If both are true, mobile manipulator is spawn (Dogtooth Mobile Robot equipped with Franka Arm)
 
 To control the mobile platform 
 
