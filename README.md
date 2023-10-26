@@ -32,13 +32,13 @@ In this file, the farm size, the number of rows, the number of plants in each ro
 
 Run the following launch file to simulate only Gazebo tomato farm world
 
-``bash
+```bash
 ros2 launch aoc_tomato_farm_gazebo tomato_farm_world.launch.py
 ```
 
 Run the following launch file to simulate mobile manipulator in Gazebo tomato farm world
 
-``bash
+```bash
 ros2 launch aoc_tomato_farm_gazebo tomato_farm_world_mobile_manipulator_001.launch.py 
 ```
 
@@ -50,13 +50,13 @@ If both are true, spawn mobile manipulator (Dogtooth Mobile Robot equipped with 
 
 To control the mobile platform 
 
-``bash
+```bash
 ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ```
 
 To control the robot arm
 
-``bash
+```bash
 ros2 run franka controller -1.57 +0.67 0 0 0 1.3 -2.3 0
 ```
 
