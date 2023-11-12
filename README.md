@@ -37,6 +37,6 @@ To use generated tomato farm in simulation, copy files in **tomato_farm_generato
 Run the following launch file to simulate only Gazebo tomato farm world
 
 ```bash
-ros2 launch tomato_simulator tomato_farm_world.launch.py
+ros2 launch tomato_farm_simulator tomato_farm_world.launch.py
 ```
 
