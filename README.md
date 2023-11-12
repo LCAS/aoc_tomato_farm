@@ -1,4 +1,6 @@
+# Follow instructions to build docker container 
 
+https://github.com/yilmazabdurrah/aoc_tomato_farm_docker.git
 
 # Tomato Farm Environment
 This package is a tomato farm simulator compatible with both Gazebo Sim and Gazebo Classic in ROS2 for ROS-based agricultural environments. This repository consists of four key parts
