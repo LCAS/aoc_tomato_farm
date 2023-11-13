@@ -40,7 +40,8 @@ source ~/.bashrc
 Run Jupyter Notebook
 
 ```bash
-jupyter notebook tomato_gen_Gazebo_Sim_and_Classic.ipyn
+cd /home/developer/dogtooth_ws/src/aoc_tomato_farm/tomato_farm_generator/scripts/
+jupyter notebook tomato_gen_Gazebo_Sim_and_Classic.ipynb
 ```
 
 In this file, the farm size, the number of rows, the number of plants in each row, the distance between each plant and each row can be parametrically adjusted. Each plant in the farm is generated randomly, including locations of stems, leaves, fruits and so on. The generated tomato farm tomato models and world files, both compatible with Gazebo Sim and Gazebo Classic are saved in **tomato_farm_generator/generated** folder. 
