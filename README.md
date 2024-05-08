@@ -1,5 +1,5 @@
 # Tomato Farm Environment
-This package is a tomato farm simulator compatible with both Gazebo Sim and Gazebo Classic in ROS2 for ROS-based agricultural environments. This repository consists of four key parts
+This package is a tomato farm simulator compatible with both Gazebo Sim and Gazebo Classic in ROS2 for ROS-based agricultural environments. This repository consists of two key parts
 
 1) Random tomato farm generator
 2) Simulation of the generated tomato farms in Gazebo Classic and Gazebo Sim
