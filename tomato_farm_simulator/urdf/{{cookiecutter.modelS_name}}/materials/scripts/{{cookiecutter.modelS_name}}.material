@@ -1,0 +1,38 @@
+material window
+{
+  technique
+  {
+    pass
+    {
+      alpha_rejection greater 128
+      
+      texture_unit
+      {
+        texture Selofan_Base_Color.png
+      }
+    }
+  }
+}
+
+
+material metal
+{
+  technique
+  {
+    pass
+    {
+      alpha_rejection greater 128
+      
+      texture_unit
+      {
+        texture Metal_Base_Color.png
+      }
+    }
+  }
+}
+
+
+
+
+
+

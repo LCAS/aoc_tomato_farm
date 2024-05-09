@@ -1,0 +1,25 @@
+<sdf version="1.6">
+  <model name="lamp_920444">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>1 1 1</size> 
+          </box>
+        </geometry>
+      </collision>
+      <visual name="lamp">
+        <geometry>
+          <mesh>
+            <uri>model://lamp_920444/meshes/lamp.dae</uri>
+            <scale>0.005 0.005 0.005</scale> 
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

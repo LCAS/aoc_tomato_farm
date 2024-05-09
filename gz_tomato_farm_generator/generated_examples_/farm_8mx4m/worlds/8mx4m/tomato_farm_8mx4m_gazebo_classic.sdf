@@ -1,0 +1,4998 @@
+<?xml version="1.0" ?>
+<sdf version='1.7'>
+    <world name='field'>
+    <light name='sun' type='directional'>
+      <cast_shadows>1</cast_shadows>
+      <pose>0 0 10 0 -0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+    
+    <gravity>0 0 -9.81</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <physics type='ode'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>1</shadows>
+    </scene>
+    <audio>
+      <device>default</device>
+    </audio>
+    <wind/>
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>0</latitude_deg>
+      <longitude_deg>0</longitude_deg>
+      <elevation>0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+    
+    <state world_name='field'>
+      <sim_time>59 840000000</sim_time>
+      <real_time>59 978066212</real_time>
+      <wall_time>1696518078 449701879</wall_time>
+      <iterations>59840</iterations> 
+     <light name='sun'>
+        <pose frame=''>0 0 10 0 -0 0</pose>
+      </light>
+    </state>     
+     
+        
+        <include>
+            <uri>model://structure_0</uri>
+            <name>structure_0</name>
+            <pose>9.0 4.0 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_90038</uri>
+            <name>metal_90038</name>
+            <pose>0.0 0.5 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_279828</uri>
+            <name>tomato_279828</name>
+            <pose>0.0 0.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_279828</uri>
+            <name>flowerpot_279828</name>
+            <pose>0.0 0.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_205880</uri>
+            <name>lamp_205880</name>
+            <pose>0.0 0.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_504361</uri>
+            <name>soilbed_504361</name>
+            <pose>0.0 0.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_447343</uri>
+            <name>tomato_447343</name>
+            <pose>0.0 2.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_447343</uri>
+            <name>flowerpot_447343</name>
+            <pose>0.0 2.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_164131</uri>
+            <name>lamp_164131</name>
+            <pose>0.0 2.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_85857</uri>
+            <name>soilbed_85857</name>
+            <pose>0.0 2.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_179953</uri>
+            <name>tomato_179953</name>
+            <pose>0.0 4.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_179953</uri>
+            <name>flowerpot_179953</name>
+            <pose>0.0 4.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_517768</uri>
+            <name>lamp_517768</name>
+            <pose>0.0 4.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_29738</uri>
+            <name>soilbed_29738</name>
+            <pose>0.0 4.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_764482</uri>
+            <name>tomato_764482</name>
+            <pose>0.0 6.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_764482</uri>
+            <name>flowerpot_764482</name>
+            <pose>0.0 6.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_627780</uri>
+            <name>lamp_627780</name>
+            <pose>0.0 6.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_858789</uri>
+            <name>soilbed_858789</name>
+            <pose>0.0 6.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_28941</uri>
+            <name>metal_28941</name>
+            <pose>2.0 0.5 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_447533</uri>
+            <name>tomato_447533</name>
+            <pose>2.0 0.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_447533</uri>
+            <name>flowerpot_447533</name>
+            <pose>2.0 0.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_659934</uri>
+            <name>lamp_659934</name>
+            <pose>2.0 0.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_254635</uri>
+            <name>soilbed_254635</name>
+            <pose>2.0 0.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_774577</uri>
+            <name>tomato_774577</name>
+            <pose>2.0 2.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_774577</uri>
+            <name>flowerpot_774577</name>
+            <pose>2.0 2.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_44184</uri>
+            <name>lamp_44184</name>
+            <pose>2.0 2.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_101296</uri>
+            <name>soilbed_101296</name>
+            <pose>2.0 2.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_750452</uri>
+            <name>tomato_750452</name>
+            <pose>2.0 4.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_750452</uri>
+            <name>flowerpot_750452</name>
+            <pose>2.0 4.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_622632</uri>
+            <name>lamp_622632</name>
+            <pose>2.0 4.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_838772</uri>
+            <name>soilbed_838772</name>
+            <pose>2.0 4.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_214007</uri>
+            <name>tomato_214007</name>
+            <pose>2.0 6.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_214007</uri>
+            <name>flowerpot_214007</name>
+            <pose>2.0 6.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_391287</uri>
+            <name>lamp_391287</name>
+            <pose>2.0 6.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_966992</uri>
+            <name>soilbed_966992</name>
+            <pose>2.0 6.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_598299</uri>
+            <name>metal_598299</name>
+            <pose>4.0 0.5 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_331164</uri>
+            <name>tomato_331164</name>
+            <pose>4.0 0.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_331164</uri>
+            <name>flowerpot_331164</name>
+            <pose>4.0 0.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_18188</uri>
+            <name>lamp_18188</name>
+            <pose>4.0 0.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_115601</uri>
+            <name>soilbed_115601</name>
+            <pose>4.0 0.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_158031</uri>
+            <name>tomato_158031</name>
+            <pose>4.0 2.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_158031</uri>
+            <name>flowerpot_158031</name>
+            <pose>4.0 2.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_469757</uri>
+            <name>lamp_469757</name>
+            <pose>4.0 2.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_777130</uri>
+            <name>soilbed_777130</name>
+            <pose>4.0 2.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_219007</uri>
+            <name>tomato_219007</name>
+            <pose>4.0 4.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_219007</uri>
+            <name>flowerpot_219007</name>
+            <pose>4.0 4.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_449165</uri>
+            <name>lamp_449165</name>
+            <pose>4.0 4.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_902572</uri>
+            <name>soilbed_902572</name>
+            <pose>4.0 4.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_485863</uri>
+            <name>tomato_485863</name>
+            <pose>4.0 6.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_485863</uri>
+            <name>flowerpot_485863</name>
+            <pose>4.0 6.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_666423</uri>
+            <name>lamp_666423</name>
+            <pose>4.0 6.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_407777</uri>
+            <name>soilbed_407777</name>
+            <pose>4.0 6.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_38463</uri>
+            <name>metal_38463</name>
+            <pose>6.0 0.5 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_774162</uri>
+            <name>tomato_774162</name>
+            <pose>6.0 0.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_774162</uri>
+            <name>flowerpot_774162</name>
+            <pose>6.0 0.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_433361</uri>
+            <name>lamp_433361</name>
+            <pose>6.0 0.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_336505</uri>
+            <name>soilbed_336505</name>
+            <pose>6.0 0.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_181945</uri>
+            <name>tomato_181945</name>
+            <pose>6.0 2.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_181945</uri>
+            <name>flowerpot_181945</name>
+            <pose>6.0 2.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_610905</uri>
+            <name>lamp_610905</name>
+            <pose>6.0 2.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_131869</uri>
+            <name>soilbed_131869</name>
+            <pose>6.0 2.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_438058</uri>
+            <name>tomato_438058</name>
+            <pose>6.0 4.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_438058</uri>
+            <name>flowerpot_438058</name>
+            <pose>6.0 4.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_150176</uri>
+            <name>lamp_150176</name>
+            <pose>6.0 4.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_148930</uri>
+            <name>soilbed_148930</name>
+            <pose>6.0 4.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_376368</uri>
+            <name>tomato_376368</name>
+            <pose>6.0 6.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_376368</uri>
+            <name>flowerpot_376368</name>
+            <pose>6.0 6.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_415477</uri>
+            <name>lamp_415477</name>
+            <pose>6.0 6.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_605298</uri>
+            <name>soilbed_605298</name>
+            <pose>6.0 6.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_403882</uri>
+            <name>metal_403882</name>
+            <pose>8.0 0.5 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_856409</uri>
+            <name>tomato_856409</name>
+            <pose>8.0 0.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_856409</uri>
+            <name>flowerpot_856409</name>
+            <pose>8.0 0.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_2160</uri>
+            <name>lamp_2160</name>
+            <pose>8.0 0.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_643117</uri>
+            <name>soilbed_643117</name>
+            <pose>8.0 0.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_490025</uri>
+            <name>tomato_490025</name>
+            <pose>8.0 2.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_490025</uri>
+            <name>flowerpot_490025</name>
+            <pose>8.0 2.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_937258</uri>
+            <name>lamp_937258</name>
+            <pose>8.0 2.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_236432</uri>
+            <name>soilbed_236432</name>
+            <pose>8.0 2.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_164466</uri>
+            <name>tomato_164466</name>
+            <pose>8.0 4.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_164466</uri>
+            <name>flowerpot_164466</name>
+            <pose>8.0 4.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_328014</uri>
+            <name>lamp_328014</name>
+            <pose>8.0 4.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_771665</uri>
+            <name>soilbed_771665</name>
+            <pose>8.0 4.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_430872</uri>
+            <name>tomato_430872</name>
+            <pose>8.0 6.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_430872</uri>
+            <name>flowerpot_430872</name>
+            <pose>8.0 6.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_920444</uri>
+            <name>lamp_920444</name>
+            <pose>8.0 6.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_644818</uri>
+            <name>soilbed_644818</name>
+            <pose>8.0 6.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_970113</uri>
+            <name>metal_970113</name>
+            <pose>10.0 0.5 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_806124</uri>
+            <name>tomato_806124</name>
+            <pose>10.0 0.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_806124</uri>
+            <name>flowerpot_806124</name>
+            <pose>10.0 0.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_484330</uri>
+            <name>lamp_484330</name>
+            <pose>10.0 0.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_88043</uri>
+            <name>soilbed_88043</name>
+            <pose>10.0 0.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_395497</uri>
+            <name>tomato_395497</name>
+            <pose>10.0 2.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_395497</uri>
+            <name>flowerpot_395497</name>
+            <pose>10.0 2.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_336457</uri>
+            <name>lamp_336457</name>
+            <pose>10.0 2.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_807929</uri>
+            <name>soilbed_807929</name>
+            <pose>10.0 2.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_141046</uri>
+            <name>tomato_141046</name>
+            <pose>10.0 4.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_141046</uri>
+            <name>flowerpot_141046</name>
+            <pose>10.0 4.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_451433</uri>
+            <name>lamp_451433</name>
+            <pose>10.0 4.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_899070</uri>
+            <name>soilbed_899070</name>
+            <pose>10.0 4.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_363114</uri>
+            <name>tomato_363114</name>
+            <pose>10.0 6.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_363114</uri>
+            <name>flowerpot_363114</name>
+            <pose>10.0 6.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_34369</uri>
+            <name>lamp_34369</name>
+            <pose>10.0 6.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_266974</uri>
+            <name>soilbed_266974</name>
+            <pose>10.0 6.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_486352</uri>
+            <name>metal_486352</name>
+            <pose>12.0 0.5 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_665495</uri>
+            <name>tomato_665495</name>
+            <pose>12.0 0.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_665495</uri>
+            <name>flowerpot_665495</name>
+            <pose>12.0 0.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_298450</uri>
+            <name>lamp_298450</name>
+            <pose>12.0 0.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_968391</uri>
+            <name>soilbed_968391</name>
+            <pose>12.0 0.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_58350</uri>
+            <name>tomato_58350</name>
+            <pose>12.0 2.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_58350</uri>
+            <name>flowerpot_58350</name>
+            <pose>12.0 2.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_912664</uri>
+            <name>lamp_912664</name>
+            <pose>12.0 2.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_867211</uri>
+            <name>soilbed_867211</name>
+            <pose>12.0 2.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_627525</uri>
+            <name>tomato_627525</name>
+            <pose>12.0 4.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_627525</uri>
+            <name>flowerpot_627525</name>
+            <pose>12.0 4.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_86722</uri>
+            <name>lamp_86722</name>
+            <pose>12.0 4.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_276112</uri>
+            <name>soilbed_276112</name>
+            <pose>12.0 4.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_347733</uri>
+            <name>tomato_347733</name>
+            <pose>12.0 6.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_347733</uri>
+            <name>flowerpot_347733</name>
+            <pose>12.0 6.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_168879</uri>
+            <name>lamp_168879</name>
+            <pose>12.0 6.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_710580</uri>
+            <name>soilbed_710580</name>
+            <pose>12.0 6.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_963791</uri>
+            <name>metal_963791</name>
+            <pose>14.0 0.5 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_846053</uri>
+            <name>tomato_846053</name>
+            <pose>14.0 0.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_846053</uri>
+            <name>flowerpot_846053</name>
+            <pose>14.0 0.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_860866</uri>
+            <name>lamp_860866</name>
+            <pose>14.0 0.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_911262</uri>
+            <name>soilbed_911262</name>
+            <pose>14.0 0.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_803735</uri>
+            <name>tomato_803735</name>
+            <pose>14.0 2.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_803735</uri>
+            <name>flowerpot_803735</name>
+            <pose>14.0 2.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_471069</uri>
+            <name>lamp_471069</name>
+            <pose>14.0 2.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_971743</uri>
+            <name>soilbed_971743</name>
+            <pose>14.0 2.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_791718</uri>
+            <name>tomato_791718</name>
+            <pose>14.0 4.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_791718</uri>
+            <name>flowerpot_791718</name>
+            <pose>14.0 4.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_559330</uri>
+            <name>lamp_559330</name>
+            <pose>14.0 4.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_859677</uri>
+            <name>soilbed_859677</name>
+            <pose>14.0 4.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_47549</uri>
+            <name>tomato_47549</name>
+            <pose>14.0 6.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_47549</uri>
+            <name>flowerpot_47549</name>
+            <pose>14.0 6.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_726761</uri>
+            <name>lamp_726761</name>
+            <pose>14.0 6.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_376253</uri>
+            <name>soilbed_376253</name>
+            <pose>14.0 6.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://structure_1</uri>
+            <name>structure_1</name>
+            <pose>9.0 15.245 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_214096</uri>
+            <name>metal_214096</name>
+            <pose>0.0 11.745 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_363117</uri>
+            <name>tomato_363117</name>
+            <pose>0.0 11.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_363117</uri>
+            <name>flowerpot_363117</name>
+            <pose>0.0 11.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_78275</uri>
+            <name>lamp_78275</name>
+            <pose>0.0 11.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_779755</uri>
+            <name>soilbed_779755</name>
+            <pose>0.0 11.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_924326</uri>
+            <name>tomato_924326</name>
+            <pose>0.0 13.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_924326</uri>
+            <name>flowerpot_924326</name>
+            <pose>0.0 13.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_750693</uri>
+            <name>lamp_750693</name>
+            <pose>0.0 13.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_282936</uri>
+            <name>soilbed_282936</name>
+            <pose>0.0 13.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_301974</uri>
+            <name>tomato_301974</name>
+            <pose>0.0 15.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_301974</uri>
+            <name>flowerpot_301974</name>
+            <pose>0.0 15.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_870997</uri>
+            <name>lamp_870997</name>
+            <pose>0.0 15.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_468201</uri>
+            <name>soilbed_468201</name>
+            <pose>0.0 15.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_599312</uri>
+            <name>tomato_599312</name>
+            <pose>0.0 17.244999999999997 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_599312</uri>
+            <name>flowerpot_599312</name>
+            <pose>0.0 17.244999999999997 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_367589</uri>
+            <name>lamp_367589</name>
+            <pose>0.0 17.244999999999997 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_565848</uri>
+            <name>soilbed_565848</name>
+            <pose>0.0 17.244999999999997 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_762758</uri>
+            <name>metal_762758</name>
+            <pose>2.0 11.745 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_220181</uri>
+            <name>tomato_220181</name>
+            <pose>2.0 11.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_220181</uri>
+            <name>flowerpot_220181</name>
+            <pose>2.0 11.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_823642</uri>
+            <name>lamp_823642</name>
+            <pose>2.0 11.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_736948</uri>
+            <name>soilbed_736948</name>
+            <pose>2.0 11.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_284345</uri>
+            <name>tomato_284345</name>
+            <pose>2.0 13.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_284345</uri>
+            <name>flowerpot_284345</name>
+            <pose>2.0 13.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_873126</uri>
+            <name>lamp_873126</name>
+            <pose>2.0 13.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_645547</uri>
+            <name>soilbed_645547</name>
+            <pose>2.0 13.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_156767</uri>
+            <name>tomato_156767</name>
+            <pose>2.0 15.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_156767</uri>
+            <name>flowerpot_156767</name>
+            <pose>2.0 15.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_287918</uri>
+            <name>lamp_287918</name>
+            <pose>2.0 15.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_406221</uri>
+            <name>soilbed_406221</name>
+            <pose>2.0 15.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_811609</uri>
+            <name>tomato_811609</name>
+            <pose>2.0 17.244999999999997 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_811609</uri>
+            <name>flowerpot_811609</name>
+            <pose>2.0 17.244999999999997 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_403119</uri>
+            <name>lamp_403119</name>
+            <pose>2.0 17.244999999999997 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_807830</uri>
+            <name>soilbed_807830</name>
+            <pose>2.0 17.244999999999997 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_159099</uri>
+            <name>metal_159099</name>
+            <pose>4.0 11.745 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_943331</uri>
+            <name>tomato_943331</name>
+            <pose>4.0 11.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_943331</uri>
+            <name>flowerpot_943331</name>
+            <pose>4.0 11.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_363341</uri>
+            <name>lamp_363341</name>
+            <pose>4.0 11.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_612136</uri>
+            <name>soilbed_612136</name>
+            <pose>4.0 11.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_182013</uri>
+            <name>tomato_182013</name>
+            <pose>4.0 13.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_182013</uri>
+            <name>flowerpot_182013</name>
+            <pose>4.0 13.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_926954</uri>
+            <name>lamp_926954</name>
+            <pose>4.0 13.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_653407</uri>
+            <name>soilbed_653407</name>
+            <pose>4.0 13.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_411025</uri>
+            <name>tomato_411025</name>
+            <pose>4.0 15.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_411025</uri>
+            <name>flowerpot_411025</name>
+            <pose>4.0 15.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_834636</uri>
+            <name>lamp_834636</name>
+            <pose>4.0 15.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_420177</uri>
+            <name>soilbed_420177</name>
+            <pose>4.0 15.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_424150</uri>
+            <name>tomato_424150</name>
+            <pose>4.0 17.244999999999997 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_424150</uri>
+            <name>flowerpot_424150</name>
+            <pose>4.0 17.244999999999997 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_368493</uri>
+            <name>lamp_368493</name>
+            <pose>4.0 17.244999999999997 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_904556</uri>
+            <name>soilbed_904556</name>
+            <pose>4.0 17.244999999999997 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_548317</uri>
+            <name>metal_548317</name>
+            <pose>6.0 11.745 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_753936</uri>
+            <name>tomato_753936</name>
+            <pose>6.0 11.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_753936</uri>
+            <name>flowerpot_753936</name>
+            <pose>6.0 11.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_538184</uri>
+            <name>lamp_538184</name>
+            <pose>6.0 11.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_813319</uri>
+            <name>soilbed_813319</name>
+            <pose>6.0 11.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_85720</uri>
+            <name>tomato_85720</name>
+            <pose>6.0 13.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_85720</uri>
+            <name>flowerpot_85720</name>
+            <pose>6.0 13.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_897913</uri>
+            <name>lamp_897913</name>
+            <pose>6.0 13.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_341303</uri>
+            <name>soilbed_341303</name>
+            <pose>6.0 13.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_186060</uri>
+            <name>tomato_186060</name>
+            <pose>6.0 15.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_186060</uri>
+            <name>flowerpot_186060</name>
+            <pose>6.0 15.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_386164</uri>
+            <name>lamp_386164</name>
+            <pose>6.0 15.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_424656</uri>
+            <name>soilbed_424656</name>
+            <pose>6.0 15.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_260036</uri>
+            <name>tomato_260036</name>
+            <pose>6.0 17.244999999999997 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_260036</uri>
+            <name>flowerpot_260036</name>
+            <pose>6.0 17.244999999999997 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_556700</uri>
+            <name>lamp_556700</name>
+            <pose>6.0 17.244999999999997 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_450453</uri>
+            <name>soilbed_450453</name>
+            <pose>6.0 17.244999999999997 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_888773</uri>
+            <name>metal_888773</name>
+            <pose>8.0 11.745 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_230254</uri>
+            <name>tomato_230254</name>
+            <pose>8.0 11.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_230254</uri>
+            <name>flowerpot_230254</name>
+            <pose>8.0 11.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_531255</uri>
+            <name>lamp_531255</name>
+            <pose>8.0 11.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_138101</uri>
+            <name>soilbed_138101</name>
+            <pose>8.0 11.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_426480</uri>
+            <name>tomato_426480</name>
+            <pose>8.0 13.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_426480</uri>
+            <name>flowerpot_426480</name>
+            <pose>8.0 13.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_87274</uri>
+            <name>lamp_87274</name>
+            <pose>8.0 13.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_323969</uri>
+            <name>soilbed_323969</name>
+            <pose>8.0 13.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_603424</uri>
+            <name>tomato_603424</name>
+            <pose>8.0 15.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_603424</uri>
+            <name>flowerpot_603424</name>
+            <pose>8.0 15.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_403677</uri>
+            <name>lamp_403677</name>
+            <pose>8.0 15.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_114848</uri>
+            <name>soilbed_114848</name>
+            <pose>8.0 15.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_462924</uri>
+            <name>tomato_462924</name>
+            <pose>8.0 17.244999999999997 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_462924</uri>
+            <name>flowerpot_462924</name>
+            <pose>8.0 17.244999999999997 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_122436</uri>
+            <name>lamp_122436</name>
+            <pose>8.0 17.244999999999997 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_877407</uri>
+            <name>soilbed_877407</name>
+            <pose>8.0 17.244999999999997 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_150380</uri>
+            <name>metal_150380</name>
+            <pose>10.0 11.745 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_287726</uri>
+            <name>tomato_287726</name>
+            <pose>10.0 11.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_287726</uri>
+            <name>flowerpot_287726</name>
+            <pose>10.0 11.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_982286</uri>
+            <name>lamp_982286</name>
+            <pose>10.0 11.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_220063</uri>
+            <name>soilbed_220063</name>
+            <pose>10.0 11.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_727385</uri>
+            <name>tomato_727385</name>
+            <pose>10.0 13.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_727385</uri>
+            <name>flowerpot_727385</name>
+            <pose>10.0 13.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_284641</uri>
+            <name>lamp_284641</name>
+            <pose>10.0 13.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_690664</uri>
+            <name>soilbed_690664</name>
+            <pose>10.0 13.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_622047</uri>
+            <name>tomato_622047</name>
+            <pose>10.0 15.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_622047</uri>
+            <name>flowerpot_622047</name>
+            <pose>10.0 15.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_149677</uri>
+            <name>lamp_149677</name>
+            <pose>10.0 15.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_784163</uri>
+            <name>soilbed_784163</name>
+            <pose>10.0 15.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_775201</uri>
+            <name>tomato_775201</name>
+            <pose>10.0 17.244999999999997 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_775201</uri>
+            <name>flowerpot_775201</name>
+            <pose>10.0 17.244999999999997 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_90556</uri>
+            <name>lamp_90556</name>
+            <pose>10.0 17.244999999999997 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_541688</uri>
+            <name>soilbed_541688</name>
+            <pose>10.0 17.244999999999997 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_476092</uri>
+            <name>metal_476092</name>
+            <pose>12.0 11.745 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_388163</uri>
+            <name>tomato_388163</name>
+            <pose>12.0 11.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_388163</uri>
+            <name>flowerpot_388163</name>
+            <pose>12.0 11.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_290855</uri>
+            <name>lamp_290855</name>
+            <pose>12.0 11.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_20524</uri>
+            <name>soilbed_20524</name>
+            <pose>12.0 11.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_91124</uri>
+            <name>tomato_91124</name>
+            <pose>12.0 13.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_91124</uri>
+            <name>flowerpot_91124</name>
+            <pose>12.0 13.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_886102</uri>
+            <name>lamp_886102</name>
+            <pose>12.0 13.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_766415</uri>
+            <name>soilbed_766415</name>
+            <pose>12.0 13.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_217755</uri>
+            <name>tomato_217755</name>
+            <pose>12.0 15.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_217755</uri>
+            <name>flowerpot_217755</name>
+            <pose>12.0 15.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_650125</uri>
+            <name>lamp_650125</name>
+            <pose>12.0 15.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_773036</uri>
+            <name>soilbed_773036</name>
+            <pose>12.0 15.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_140298</uri>
+            <name>tomato_140298</name>
+            <pose>12.0 17.244999999999997 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_140298</uri>
+            <name>flowerpot_140298</name>
+            <pose>12.0 17.244999999999997 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_734712</uri>
+            <name>lamp_734712</name>
+            <pose>12.0 17.244999999999997 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_485281</uri>
+            <name>soilbed_485281</name>
+            <pose>12.0 17.244999999999997 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_516172</uri>
+            <name>metal_516172</name>
+            <pose>14.0 11.745 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_292455</uri>
+            <name>tomato_292455</name>
+            <pose>14.0 11.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_292455</uri>
+            <name>flowerpot_292455</name>
+            <pose>14.0 11.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_157745</uri>
+            <name>lamp_157745</name>
+            <pose>14.0 11.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_891554</uri>
+            <name>soilbed_891554</name>
+            <pose>14.0 11.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_50802</uri>
+            <name>tomato_50802</name>
+            <pose>14.0 13.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_50802</uri>
+            <name>flowerpot_50802</name>
+            <pose>14.0 13.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_737487</uri>
+            <name>lamp_737487</name>
+            <pose>14.0 13.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_470562</uri>
+            <name>soilbed_470562</name>
+            <pose>14.0 13.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_758877</uri>
+            <name>tomato_758877</name>
+            <pose>14.0 15.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_758877</uri>
+            <name>flowerpot_758877</name>
+            <pose>14.0 15.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_412433</uri>
+            <name>lamp_412433</name>
+            <pose>14.0 15.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_456930</uri>
+            <name>soilbed_456930</name>
+            <pose>14.0 15.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_340930</uri>
+            <name>tomato_340930</name>
+            <pose>14.0 17.244999999999997 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_340930</uri>
+            <name>flowerpot_340930</name>
+            <pose>14.0 17.244999999999997 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_209086</uri>
+            <name>lamp_209086</name>
+            <pose>14.0 17.244999999999997 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_879789</uri>
+            <name>soilbed_879789</name>
+            <pose>14.0 17.244999999999997 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://structure_2</uri>
+            <name>structure_2</name>
+            <pose>9.0 26.49 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_885982</uri>
+            <name>metal_885982</name>
+            <pose>0.0 22.99 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_397843</uri>
+            <name>tomato_397843</name>
+            <pose>0.0 22.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_397843</uri>
+            <name>flowerpot_397843</name>
+            <pose>0.0 22.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_506347</uri>
+            <name>lamp_506347</name>
+            <pose>0.0 22.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_764189</uri>
+            <name>soilbed_764189</name>
+            <pose>0.0 22.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_908640</uri>
+            <name>tomato_908640</name>
+            <pose>0.0 24.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_908640</uri>
+            <name>flowerpot_908640</name>
+            <pose>0.0 24.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_864341</uri>
+            <name>lamp_864341</name>
+            <pose>0.0 24.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_309681</uri>
+            <name>soilbed_309681</name>
+            <pose>0.0 24.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_586628</uri>
+            <name>tomato_586628</name>
+            <pose>0.0 26.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_586628</uri>
+            <name>flowerpot_586628</name>
+            <pose>0.0 26.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_951428</uri>
+            <name>lamp_951428</name>
+            <pose>0.0 26.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_659877</uri>
+            <name>soilbed_659877</name>
+            <pose>0.0 26.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_863099</uri>
+            <name>tomato_863099</name>
+            <pose>0.0 28.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_863099</uri>
+            <name>flowerpot_863099</name>
+            <pose>0.0 28.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_641818</uri>
+            <name>lamp_641818</name>
+            <pose>0.0 28.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_766550</uri>
+            <name>soilbed_766550</name>
+            <pose>0.0 28.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_304712</uri>
+            <name>metal_304712</name>
+            <pose>2.0 22.99 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_906212</uri>
+            <name>tomato_906212</name>
+            <pose>2.0 22.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_906212</uri>
+            <name>flowerpot_906212</name>
+            <pose>2.0 22.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_167905</uri>
+            <name>lamp_167905</name>
+            <pose>2.0 22.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_543859</uri>
+            <name>soilbed_543859</name>
+            <pose>2.0 22.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_500204</uri>
+            <name>tomato_500204</name>
+            <pose>2.0 24.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_500204</uri>
+            <name>flowerpot_500204</name>
+            <pose>2.0 24.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_858019</uri>
+            <name>lamp_858019</name>
+            <pose>2.0 24.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_313980</uri>
+            <name>soilbed_313980</name>
+            <pose>2.0 24.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_850031</uri>
+            <name>tomato_850031</name>
+            <pose>2.0 26.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_850031</uri>
+            <name>flowerpot_850031</name>
+            <pose>2.0 26.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_901947</uri>
+            <name>lamp_901947</name>
+            <pose>2.0 26.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_561702</uri>
+            <name>soilbed_561702</name>
+            <pose>2.0 26.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_402781</uri>
+            <name>tomato_402781</name>
+            <pose>2.0 28.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_402781</uri>
+            <name>flowerpot_402781</name>
+            <pose>2.0 28.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_320891</uri>
+            <name>lamp_320891</name>
+            <pose>2.0 28.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_733119</uri>
+            <name>soilbed_733119</name>
+            <pose>2.0 28.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_52734</uri>
+            <name>metal_52734</name>
+            <pose>4.0 22.99 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_529567</uri>
+            <name>tomato_529567</name>
+            <pose>4.0 22.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_529567</uri>
+            <name>flowerpot_529567</name>
+            <pose>4.0 22.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_933102</uri>
+            <name>lamp_933102</name>
+            <pose>4.0 22.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_836145</uri>
+            <name>soilbed_836145</name>
+            <pose>4.0 22.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_629267</uri>
+            <name>tomato_629267</name>
+            <pose>4.0 24.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_629267</uri>
+            <name>flowerpot_629267</name>
+            <pose>4.0 24.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_328493</uri>
+            <name>lamp_328493</name>
+            <pose>4.0 24.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_69288</uri>
+            <name>soilbed_69288</name>
+            <pose>4.0 24.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_754574</uri>
+            <name>tomato_754574</name>
+            <pose>4.0 26.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_754574</uri>
+            <name>flowerpot_754574</name>
+            <pose>4.0 26.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_979161</uri>
+            <name>lamp_979161</name>
+            <pose>4.0 26.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_521987</uri>
+            <name>soilbed_521987</name>
+            <pose>4.0 26.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_655845</uri>
+            <name>tomato_655845</name>
+            <pose>4.0 28.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_655845</uri>
+            <name>flowerpot_655845</name>
+            <pose>4.0 28.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_358025</uri>
+            <name>lamp_358025</name>
+            <pose>4.0 28.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_709700</uri>
+            <name>soilbed_709700</name>
+            <pose>4.0 28.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_946579</uri>
+            <name>metal_946579</name>
+            <pose>6.0 22.99 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_753856</uri>
+            <name>tomato_753856</name>
+            <pose>6.0 22.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_753856</uri>
+            <name>flowerpot_753856</name>
+            <pose>6.0 22.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_742625</uri>
+            <name>lamp_742625</name>
+            <pose>6.0 22.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_561369</uri>
+            <name>soilbed_561369</name>
+            <pose>6.0 22.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_876187</uri>
+            <name>tomato_876187</name>
+            <pose>6.0 24.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_876187</uri>
+            <name>flowerpot_876187</name>
+            <pose>6.0 24.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_740587</uri>
+            <name>lamp_740587</name>
+            <pose>6.0 24.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_313862</uri>
+            <name>soilbed_313862</name>
+            <pose>6.0 24.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_401334</uri>
+            <name>tomato_401334</name>
+            <pose>6.0 26.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_401334</uri>
+            <name>flowerpot_401334</name>
+            <pose>6.0 26.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_932087</uri>
+            <name>lamp_932087</name>
+            <pose>6.0 26.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_785016</uri>
+            <name>soilbed_785016</name>
+            <pose>6.0 26.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_368316</uri>
+            <name>tomato_368316</name>
+            <pose>6.0 28.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_368316</uri>
+            <name>flowerpot_368316</name>
+            <pose>6.0 28.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_733455</uri>
+            <name>lamp_733455</name>
+            <pose>6.0 28.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_58834</uri>
+            <name>soilbed_58834</name>
+            <pose>6.0 28.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_934165</uri>
+            <name>metal_934165</name>
+            <pose>8.0 22.99 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_210644</uri>
+            <name>tomato_210644</name>
+            <pose>8.0 22.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_210644</uri>
+            <name>flowerpot_210644</name>
+            <pose>8.0 22.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_314618</uri>
+            <name>lamp_314618</name>
+            <pose>8.0 22.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_781788</uri>
+            <name>soilbed_781788</name>
+            <pose>8.0 22.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_651756</uri>
+            <name>tomato_651756</name>
+            <pose>8.0 24.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_651756</uri>
+            <name>flowerpot_651756</name>
+            <pose>8.0 24.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_196409</uri>
+            <name>lamp_196409</name>
+            <pose>8.0 24.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_903812</uri>
+            <name>soilbed_903812</name>
+            <pose>8.0 24.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_459232</uri>
+            <name>tomato_459232</name>
+            <pose>8.0 26.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_459232</uri>
+            <name>flowerpot_459232</name>
+            <pose>8.0 26.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_782343</uri>
+            <name>lamp_782343</name>
+            <pose>8.0 26.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_217368</uri>
+            <name>soilbed_217368</name>
+            <pose>8.0 26.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_696085</uri>
+            <name>tomato_696085</name>
+            <pose>8.0 28.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_696085</uri>
+            <name>flowerpot_696085</name>
+            <pose>8.0 28.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_125651</uri>
+            <name>lamp_125651</name>
+            <pose>8.0 28.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_618423</uri>
+            <name>soilbed_618423</name>
+            <pose>8.0 28.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_109202</uri>
+            <name>metal_109202</name>
+            <pose>10.0 22.99 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_616880</uri>
+            <name>tomato_616880</name>
+            <pose>10.0 22.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_616880</uri>
+            <name>flowerpot_616880</name>
+            <pose>10.0 22.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_200296</uri>
+            <name>lamp_200296</name>
+            <pose>10.0 22.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_164345</uri>
+            <name>soilbed_164345</name>
+            <pose>10.0 22.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_647528</uri>
+            <name>tomato_647528</name>
+            <pose>10.0 24.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_647528</uri>
+            <name>flowerpot_647528</name>
+            <pose>10.0 24.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_708789</uri>
+            <name>lamp_708789</name>
+            <pose>10.0 24.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_817204</uri>
+            <name>soilbed_817204</name>
+            <pose>10.0 24.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_734664</uri>
+            <name>tomato_734664</name>
+            <pose>10.0 26.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_734664</uri>
+            <name>flowerpot_734664</name>
+            <pose>10.0 26.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_97483</uri>
+            <name>lamp_97483</name>
+            <pose>10.0 26.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_352445</uri>
+            <name>soilbed_352445</name>
+            <pose>10.0 26.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_279809</uri>
+            <name>tomato_279809</name>
+            <pose>10.0 28.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_279809</uri>
+            <name>flowerpot_279809</name>
+            <pose>10.0 28.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_744726</uri>
+            <name>lamp_744726</name>
+            <pose>10.0 28.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_155092</uri>
+            <name>soilbed_155092</name>
+            <pose>10.0 28.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_416447</uri>
+            <name>metal_416447</name>
+            <pose>12.0 22.99 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_917643</uri>
+            <name>tomato_917643</name>
+            <pose>12.0 22.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_917643</uri>
+            <name>flowerpot_917643</name>
+            <pose>12.0 22.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_870613</uri>
+            <name>lamp_870613</name>
+            <pose>12.0 22.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_808788</uri>
+            <name>soilbed_808788</name>
+            <pose>12.0 22.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_319346</uri>
+            <name>tomato_319346</name>
+            <pose>12.0 24.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_319346</uri>
+            <name>flowerpot_319346</name>
+            <pose>12.0 24.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_728886</uri>
+            <name>lamp_728886</name>
+            <pose>12.0 24.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_288792</uri>
+            <name>soilbed_288792</name>
+            <pose>12.0 24.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_164181</uri>
+            <name>tomato_164181</name>
+            <pose>12.0 26.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_164181</uri>
+            <name>flowerpot_164181</name>
+            <pose>12.0 26.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_242889</uri>
+            <name>lamp_242889</name>
+            <pose>12.0 26.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_709242</uri>
+            <name>soilbed_709242</name>
+            <pose>12.0 26.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_234360</uri>
+            <name>tomato_234360</name>
+            <pose>12.0 28.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_234360</uri>
+            <name>flowerpot_234360</name>
+            <pose>12.0 28.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_804026</uri>
+            <name>lamp_804026</name>
+            <pose>12.0 28.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_992690</uri>
+            <name>soilbed_992690</name>
+            <pose>12.0 28.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_269102</uri>
+            <name>metal_269102</name>
+            <pose>14.0 22.99 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_128336</uri>
+            <name>tomato_128336</name>
+            <pose>14.0 22.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_128336</uri>
+            <name>flowerpot_128336</name>
+            <pose>14.0 22.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_589743</uri>
+            <name>lamp_589743</name>
+            <pose>14.0 22.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_130297</uri>
+            <name>soilbed_130297</name>
+            <pose>14.0 22.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_880829</uri>
+            <name>tomato_880829</name>
+            <pose>14.0 24.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_880829</uri>
+            <name>flowerpot_880829</name>
+            <pose>14.0 24.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_181544</uri>
+            <name>lamp_181544</name>
+            <pose>14.0 24.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_661521</uri>
+            <name>soilbed_661521</name>
+            <pose>14.0 24.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_373188</uri>
+            <name>tomato_373188</name>
+            <pose>14.0 26.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_373188</uri>
+            <name>flowerpot_373188</name>
+            <pose>14.0 26.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_800225</uri>
+            <name>lamp_800225</name>
+            <pose>14.0 26.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_121340</uri>
+            <name>soilbed_121340</name>
+            <pose>14.0 26.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_271052</uri>
+            <name>tomato_271052</name>
+            <pose>14.0 28.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_271052</uri>
+            <name>flowerpot_271052</name>
+            <pose>14.0 28.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_212133</uri>
+            <name>lamp_212133</name>
+            <pose>14.0 28.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_804456</uri>
+            <name>soilbed_804456</name>
+            <pose>14.0 28.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://structure_3</uri>
+            <name>structure_3</name>
+            <pose>33.3 4.0 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_261071</uri>
+            <name>metal_261071</name>
+            <pose>24.3 0.5 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_347346</uri>
+            <name>tomato_347346</name>
+            <pose>24.3 0.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_347346</uri>
+            <name>flowerpot_347346</name>
+            <pose>24.3 0.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_911030</uri>
+            <name>lamp_911030</name>
+            <pose>24.3 0.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_386818</uri>
+            <name>soilbed_386818</name>
+            <pose>24.3 0.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_387180</uri>
+            <name>tomato_387180</name>
+            <pose>24.3 2.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_387180</uri>
+            <name>flowerpot_387180</name>
+            <pose>24.3 2.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_285711</uri>
+            <name>lamp_285711</name>
+            <pose>24.3 2.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_633768</uri>
+            <name>soilbed_633768</name>
+            <pose>24.3 2.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_528844</uri>
+            <name>tomato_528844</name>
+            <pose>24.3 4.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_528844</uri>
+            <name>flowerpot_528844</name>
+            <pose>24.3 4.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_897073</uri>
+            <name>lamp_897073</name>
+            <pose>24.3 4.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_263726</uri>
+            <name>soilbed_263726</name>
+            <pose>24.3 4.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_883605</uri>
+            <name>tomato_883605</name>
+            <pose>24.3 6.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_883605</uri>
+            <name>flowerpot_883605</name>
+            <pose>24.3 6.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_106871</uri>
+            <name>lamp_106871</name>
+            <pose>24.3 6.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_909202</uri>
+            <name>soilbed_909202</name>
+            <pose>24.3 6.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_330579</uri>
+            <name>metal_330579</name>
+            <pose>26.3 0.5 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_196535</uri>
+            <name>tomato_196535</name>
+            <pose>26.3 0.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_196535</uri>
+            <name>flowerpot_196535</name>
+            <pose>26.3 0.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_604642</uri>
+            <name>lamp_604642</name>
+            <pose>26.3 0.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_28811</uri>
+            <name>soilbed_28811</name>
+            <pose>26.3 0.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_666899</uri>
+            <name>tomato_666899</name>
+            <pose>26.3 2.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_666899</uri>
+            <name>flowerpot_666899</name>
+            <pose>26.3 2.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_907074</uri>
+            <name>lamp_907074</name>
+            <pose>26.3 2.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_390646</uri>
+            <name>soilbed_390646</name>
+            <pose>26.3 2.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_632590</uri>
+            <name>tomato_632590</name>
+            <pose>26.3 4.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_632590</uri>
+            <name>flowerpot_632590</name>
+            <pose>26.3 4.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_496933</uri>
+            <name>lamp_496933</name>
+            <pose>26.3 4.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_676282</uri>
+            <name>soilbed_676282</name>
+            <pose>26.3 4.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_994040</uri>
+            <name>tomato_994040</name>
+            <pose>26.3 6.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_994040</uri>
+            <name>flowerpot_994040</name>
+            <pose>26.3 6.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_739768</uri>
+            <name>lamp_739768</name>
+            <pose>26.3 6.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_528060</uri>
+            <name>soilbed_528060</name>
+            <pose>26.3 6.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_570172</uri>
+            <name>metal_570172</name>
+            <pose>28.3 0.5 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_145273</uri>
+            <name>tomato_145273</name>
+            <pose>28.3 0.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_145273</uri>
+            <name>flowerpot_145273</name>
+            <pose>28.3 0.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_286132</uri>
+            <name>lamp_286132</name>
+            <pose>28.3 0.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_675082</uri>
+            <name>soilbed_675082</name>
+            <pose>28.3 0.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_889361</uri>
+            <name>tomato_889361</name>
+            <pose>28.3 2.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_889361</uri>
+            <name>flowerpot_889361</name>
+            <pose>28.3 2.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_450000</uri>
+            <name>lamp_450000</name>
+            <pose>28.3 2.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_719225</uri>
+            <name>soilbed_719225</name>
+            <pose>28.3 2.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_98359</uri>
+            <name>tomato_98359</name>
+            <pose>28.3 4.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_98359</uri>
+            <name>flowerpot_98359</name>
+            <pose>28.3 4.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_754582</uri>
+            <name>lamp_754582</name>
+            <pose>28.3 4.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_903761</uri>
+            <name>soilbed_903761</name>
+            <pose>28.3 4.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_808696</uri>
+            <name>tomato_808696</name>
+            <pose>28.3 6.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_808696</uri>
+            <name>flowerpot_808696</name>
+            <pose>28.3 6.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_115938</uri>
+            <name>lamp_115938</name>
+            <pose>28.3 6.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_32524</uri>
+            <name>soilbed_32524</name>
+            <pose>28.3 6.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_235934</uri>
+            <name>metal_235934</name>
+            <pose>30.3 0.5 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_493428</uri>
+            <name>tomato_493428</name>
+            <pose>30.3 0.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_493428</uri>
+            <name>flowerpot_493428</name>
+            <pose>30.3 0.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_459654</uri>
+            <name>lamp_459654</name>
+            <pose>30.3 0.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_691218</uri>
+            <name>soilbed_691218</name>
+            <pose>30.3 0.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_498339</uri>
+            <name>tomato_498339</name>
+            <pose>30.3 2.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_498339</uri>
+            <name>flowerpot_498339</name>
+            <pose>30.3 2.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_980936</uri>
+            <name>lamp_980936</name>
+            <pose>30.3 2.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_163574</uri>
+            <name>soilbed_163574</name>
+            <pose>30.3 2.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_586260</uri>
+            <name>tomato_586260</name>
+            <pose>30.3 4.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_586260</uri>
+            <name>flowerpot_586260</name>
+            <pose>30.3 4.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_198821</uri>
+            <name>lamp_198821</name>
+            <pose>30.3 4.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_360444</uri>
+            <name>soilbed_360444</name>
+            <pose>30.3 4.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_499582</uri>
+            <name>tomato_499582</name>
+            <pose>30.3 6.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_499582</uri>
+            <name>flowerpot_499582</name>
+            <pose>30.3 6.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_539064</uri>
+            <name>lamp_539064</name>
+            <pose>30.3 6.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_858733</uri>
+            <name>soilbed_858733</name>
+            <pose>30.3 6.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_788527</uri>
+            <name>metal_788527</name>
+            <pose>32.3 0.5 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_199478</uri>
+            <name>tomato_199478</name>
+            <pose>32.3 0.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_199478</uri>
+            <name>flowerpot_199478</name>
+            <pose>32.3 0.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_767802</uri>
+            <name>lamp_767802</name>
+            <pose>32.3 0.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_769015</uri>
+            <name>soilbed_769015</name>
+            <pose>32.3 0.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_336386</uri>
+            <name>tomato_336386</name>
+            <pose>32.3 2.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_336386</uri>
+            <name>flowerpot_336386</name>
+            <pose>32.3 2.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_556594</uri>
+            <name>lamp_556594</name>
+            <pose>32.3 2.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_405614</uri>
+            <name>soilbed_405614</name>
+            <pose>32.3 2.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_376061</uri>
+            <name>tomato_376061</name>
+            <pose>32.3 4.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_376061</uri>
+            <name>flowerpot_376061</name>
+            <pose>32.3 4.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_82744</uri>
+            <name>lamp_82744</name>
+            <pose>32.3 4.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_743264</uri>
+            <name>soilbed_743264</name>
+            <pose>32.3 4.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_729667</uri>
+            <name>tomato_729667</name>
+            <pose>32.3 6.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_729667</uri>
+            <name>flowerpot_729667</name>
+            <pose>32.3 6.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_685378</uri>
+            <name>lamp_685378</name>
+            <pose>32.3 6.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_428174</uri>
+            <name>soilbed_428174</name>
+            <pose>32.3 6.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_178471</uri>
+            <name>metal_178471</name>
+            <pose>34.3 0.5 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_361552</uri>
+            <name>tomato_361552</name>
+            <pose>34.3 0.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_361552</uri>
+            <name>flowerpot_361552</name>
+            <pose>34.3 0.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_665404</uri>
+            <name>lamp_665404</name>
+            <pose>34.3 0.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_955580</uri>
+            <name>soilbed_955580</name>
+            <pose>34.3 0.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_760955</uri>
+            <name>tomato_760955</name>
+            <pose>34.3 2.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_760955</uri>
+            <name>flowerpot_760955</name>
+            <pose>34.3 2.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_557203</uri>
+            <name>lamp_557203</name>
+            <pose>34.3 2.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_557692</uri>
+            <name>soilbed_557692</name>
+            <pose>34.3 2.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_329022</uri>
+            <name>tomato_329022</name>
+            <pose>34.3 4.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_329022</uri>
+            <name>flowerpot_329022</name>
+            <pose>34.3 4.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_634674</uri>
+            <name>lamp_634674</name>
+            <pose>34.3 4.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_946814</uri>
+            <name>soilbed_946814</name>
+            <pose>34.3 4.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_645251</uri>
+            <name>tomato_645251</name>
+            <pose>34.3 6.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_645251</uri>
+            <name>flowerpot_645251</name>
+            <pose>34.3 6.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_52873</uri>
+            <name>lamp_52873</name>
+            <pose>34.3 6.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_327388</uri>
+            <name>soilbed_327388</name>
+            <pose>34.3 6.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_898009</uri>
+            <name>metal_898009</name>
+            <pose>36.3 0.5 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_352341</uri>
+            <name>tomato_352341</name>
+            <pose>36.3 0.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_352341</uri>
+            <name>flowerpot_352341</name>
+            <pose>36.3 0.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_929853</uri>
+            <name>lamp_929853</name>
+            <pose>36.3 0.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_990532</uri>
+            <name>soilbed_990532</name>
+            <pose>36.3 0.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_923643</uri>
+            <name>tomato_923643</name>
+            <pose>36.3 2.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_923643</uri>
+            <name>flowerpot_923643</name>
+            <pose>36.3 2.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_304744</uri>
+            <name>lamp_304744</name>
+            <pose>36.3 2.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_392837</uri>
+            <name>soilbed_392837</name>
+            <pose>36.3 2.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_39854</uri>
+            <name>tomato_39854</name>
+            <pose>36.3 4.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_39854</uri>
+            <name>flowerpot_39854</name>
+            <pose>36.3 4.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_314711</uri>
+            <name>lamp_314711</name>
+            <pose>36.3 4.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_51059</uri>
+            <name>soilbed_51059</name>
+            <pose>36.3 4.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_156203</uri>
+            <name>tomato_156203</name>
+            <pose>36.3 6.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_156203</uri>
+            <name>flowerpot_156203</name>
+            <pose>36.3 6.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_607381</uri>
+            <name>lamp_607381</name>
+            <pose>36.3 6.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_453205</uri>
+            <name>soilbed_453205</name>
+            <pose>36.3 6.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_427478</uri>
+            <name>metal_427478</name>
+            <pose>38.3 0.5 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_687613</uri>
+            <name>tomato_687613</name>
+            <pose>38.3 0.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_687613</uri>
+            <name>flowerpot_687613</name>
+            <pose>38.3 0.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_580682</uri>
+            <name>lamp_580682</name>
+            <pose>38.3 0.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_554963</uri>
+            <name>soilbed_554963</name>
+            <pose>38.3 0.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_736752</uri>
+            <name>tomato_736752</name>
+            <pose>38.3 2.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_736752</uri>
+            <name>flowerpot_736752</name>
+            <pose>38.3 2.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_159945</uri>
+            <name>lamp_159945</name>
+            <pose>38.3 2.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_816854</uri>
+            <name>soilbed_816854</name>
+            <pose>38.3 2.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_827503</uri>
+            <name>tomato_827503</name>
+            <pose>38.3 4.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_827503</uri>
+            <name>flowerpot_827503</name>
+            <pose>38.3 4.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_952012</uri>
+            <name>lamp_952012</name>
+            <pose>38.3 4.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_894855</uri>
+            <name>soilbed_894855</name>
+            <pose>38.3 4.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_393680</uri>
+            <name>tomato_393680</name>
+            <pose>38.3 6.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_393680</uri>
+            <name>flowerpot_393680</name>
+            <pose>38.3 6.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_339987</uri>
+            <name>lamp_339987</name>
+            <pose>38.3 6.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_544132</uri>
+            <name>soilbed_544132</name>
+            <pose>38.3 6.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://structure_4</uri>
+            <name>structure_4</name>
+            <pose>33.3 15.245 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_945546</uri>
+            <name>metal_945546</name>
+            <pose>24.3 11.745 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_515005</uri>
+            <name>tomato_515005</name>
+            <pose>24.3 11.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_515005</uri>
+            <name>flowerpot_515005</name>
+            <pose>24.3 11.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_124581</uri>
+            <name>lamp_124581</name>
+            <pose>24.3 11.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_363662</uri>
+            <name>soilbed_363662</name>
+            <pose>24.3 11.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_777810</uri>
+            <name>tomato_777810</name>
+            <pose>24.3 13.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_777810</uri>
+            <name>flowerpot_777810</name>
+            <pose>24.3 13.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_423479</uri>
+            <name>lamp_423479</name>
+            <pose>24.3 13.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_583377</uri>
+            <name>soilbed_583377</name>
+            <pose>24.3 13.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_110098</uri>
+            <name>tomato_110098</name>
+            <pose>24.3 15.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_110098</uri>
+            <name>flowerpot_110098</name>
+            <pose>24.3 15.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_576308</uri>
+            <name>lamp_576308</name>
+            <pose>24.3 15.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_658370</uri>
+            <name>soilbed_658370</name>
+            <pose>24.3 15.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_662772</uri>
+            <name>tomato_662772</name>
+            <pose>24.3 17.244999999999997 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_662772</uri>
+            <name>flowerpot_662772</name>
+            <pose>24.3 17.244999999999997 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_468946</uri>
+            <name>lamp_468946</name>
+            <pose>24.3 17.244999999999997 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_576858</uri>
+            <name>soilbed_576858</name>
+            <pose>24.3 17.244999999999997 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_140770</uri>
+            <name>metal_140770</name>
+            <pose>26.3 11.745 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_498313</uri>
+            <name>tomato_498313</name>
+            <pose>26.3 11.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_498313</uri>
+            <name>flowerpot_498313</name>
+            <pose>26.3 11.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_511921</uri>
+            <name>lamp_511921</name>
+            <pose>26.3 11.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_200951</uri>
+            <name>soilbed_200951</name>
+            <pose>26.3 11.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_228084</uri>
+            <name>tomato_228084</name>
+            <pose>26.3 13.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_228084</uri>
+            <name>flowerpot_228084</name>
+            <pose>26.3 13.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_241763</uri>
+            <name>lamp_241763</name>
+            <pose>26.3 13.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_97356</uri>
+            <name>soilbed_97356</name>
+            <pose>26.3 13.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_668630</uri>
+            <name>tomato_668630</name>
+            <pose>26.3 15.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_668630</uri>
+            <name>flowerpot_668630</name>
+            <pose>26.3 15.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_353169</uri>
+            <name>lamp_353169</name>
+            <pose>26.3 15.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_166416</uri>
+            <name>soilbed_166416</name>
+            <pose>26.3 15.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_660971</uri>
+            <name>tomato_660971</name>
+            <pose>26.3 17.244999999999997 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_660971</uri>
+            <name>flowerpot_660971</name>
+            <pose>26.3 17.244999999999997 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_369523</uri>
+            <name>lamp_369523</name>
+            <pose>26.3 17.244999999999997 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_277558</uri>
+            <name>soilbed_277558</name>
+            <pose>26.3 17.244999999999997 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_258030</uri>
+            <name>metal_258030</name>
+            <pose>28.3 11.745 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_730203</uri>
+            <name>tomato_730203</name>
+            <pose>28.3 11.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_730203</uri>
+            <name>flowerpot_730203</name>
+            <pose>28.3 11.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_606508</uri>
+            <name>lamp_606508</name>
+            <pose>28.3 11.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_508890</uri>
+            <name>soilbed_508890</name>
+            <pose>28.3 11.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_649911</uri>
+            <name>tomato_649911</name>
+            <pose>28.3 13.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_649911</uri>
+            <name>flowerpot_649911</name>
+            <pose>28.3 13.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_558154</uri>
+            <name>lamp_558154</name>
+            <pose>28.3 13.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_549795</uri>
+            <name>soilbed_549795</name>
+            <pose>28.3 13.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_66170</uri>
+            <name>tomato_66170</name>
+            <pose>28.3 15.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_66170</uri>
+            <name>flowerpot_66170</name>
+            <pose>28.3 15.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_706275</uri>
+            <name>lamp_706275</name>
+            <pose>28.3 15.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_645702</uri>
+            <name>soilbed_645702</name>
+            <pose>28.3 15.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_344478</uri>
+            <name>tomato_344478</name>
+            <pose>28.3 17.244999999999997 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_344478</uri>
+            <name>flowerpot_344478</name>
+            <pose>28.3 17.244999999999997 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_569883</uri>
+            <name>lamp_569883</name>
+            <pose>28.3 17.244999999999997 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_133954</uri>
+            <name>soilbed_133954</name>
+            <pose>28.3 17.244999999999997 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_554066</uri>
+            <name>metal_554066</name>
+            <pose>30.3 11.745 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_646431</uri>
+            <name>tomato_646431</name>
+            <pose>30.3 11.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_646431</uri>
+            <name>flowerpot_646431</name>
+            <pose>30.3 11.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_429533</uri>
+            <name>lamp_429533</name>
+            <pose>30.3 11.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_556932</uri>
+            <name>soilbed_556932</name>
+            <pose>30.3 11.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_719998</uri>
+            <name>tomato_719998</name>
+            <pose>30.3 13.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_719998</uri>
+            <name>flowerpot_719998</name>
+            <pose>30.3 13.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_97383</uri>
+            <name>lamp_97383</name>
+            <pose>30.3 13.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_352344</uri>
+            <name>soilbed_352344</name>
+            <pose>30.3 13.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_462074</uri>
+            <name>tomato_462074</name>
+            <pose>30.3 15.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_462074</uri>
+            <name>flowerpot_462074</name>
+            <pose>30.3 15.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_347474</uri>
+            <name>lamp_347474</name>
+            <pose>30.3 15.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_784219</uri>
+            <name>soilbed_784219</name>
+            <pose>30.3 15.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_568583</uri>
+            <name>tomato_568583</name>
+            <pose>30.3 17.244999999999997 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_568583</uri>
+            <name>flowerpot_568583</name>
+            <pose>30.3 17.244999999999997 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_327071</uri>
+            <name>lamp_327071</name>
+            <pose>30.3 17.244999999999997 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_538188</uri>
+            <name>soilbed_538188</name>
+            <pose>30.3 17.244999999999997 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_159770</uri>
+            <name>metal_159770</name>
+            <pose>32.3 11.745 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_865149</uri>
+            <name>tomato_865149</name>
+            <pose>32.3 11.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_865149</uri>
+            <name>flowerpot_865149</name>
+            <pose>32.3 11.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_532138</uri>
+            <name>lamp_532138</name>
+            <pose>32.3 11.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_681</uri>
+            <name>soilbed_681</name>
+            <pose>32.3 11.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_176167</uri>
+            <name>tomato_176167</name>
+            <pose>32.3 13.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_176167</uri>
+            <name>flowerpot_176167</name>
+            <pose>32.3 13.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_120150</uri>
+            <name>lamp_120150</name>
+            <pose>32.3 13.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_830903</uri>
+            <name>soilbed_830903</name>
+            <pose>32.3 13.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_393867</uri>
+            <name>tomato_393867</name>
+            <pose>32.3 15.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_393867</uri>
+            <name>flowerpot_393867</name>
+            <pose>32.3 15.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_778545</uri>
+            <name>lamp_778545</name>
+            <pose>32.3 15.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_7949</uri>
+            <name>soilbed_7949</name>
+            <pose>32.3 15.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_561309</uri>
+            <name>tomato_561309</name>
+            <pose>32.3 17.244999999999997 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_561309</uri>
+            <name>flowerpot_561309</name>
+            <pose>32.3 17.244999999999997 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_928169</uri>
+            <name>lamp_928169</name>
+            <pose>32.3 17.244999999999997 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_81234</uri>
+            <name>soilbed_81234</name>
+            <pose>32.3 17.244999999999997 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_63761</uri>
+            <name>metal_63761</name>
+            <pose>34.3 11.745 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_583456</uri>
+            <name>tomato_583456</name>
+            <pose>34.3 11.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_583456</uri>
+            <name>flowerpot_583456</name>
+            <pose>34.3 11.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_387996</uri>
+            <name>lamp_387996</name>
+            <pose>34.3 11.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_104495</uri>
+            <name>soilbed_104495</name>
+            <pose>34.3 11.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_840678</uri>
+            <name>tomato_840678</name>
+            <pose>34.3 13.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_840678</uri>
+            <name>flowerpot_840678</name>
+            <pose>34.3 13.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_936068</uri>
+            <name>lamp_936068</name>
+            <pose>34.3 13.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_203776</uri>
+            <name>soilbed_203776</name>
+            <pose>34.3 13.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_808418</uri>
+            <name>tomato_808418</name>
+            <pose>34.3 15.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_808418</uri>
+            <name>flowerpot_808418</name>
+            <pose>34.3 15.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_665875</uri>
+            <name>lamp_665875</name>
+            <pose>34.3 15.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_242078</uri>
+            <name>soilbed_242078</name>
+            <pose>34.3 15.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_356257</uri>
+            <name>tomato_356257</name>
+            <pose>34.3 17.244999999999997 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_356257</uri>
+            <name>flowerpot_356257</name>
+            <pose>34.3 17.244999999999997 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_718018</uri>
+            <name>lamp_718018</name>
+            <pose>34.3 17.244999999999997 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_494437</uri>
+            <name>soilbed_494437</name>
+            <pose>34.3 17.244999999999997 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_996287</uri>
+            <name>metal_996287</name>
+            <pose>36.3 11.745 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_936778</uri>
+            <name>tomato_936778</name>
+            <pose>36.3 11.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_936778</uri>
+            <name>flowerpot_936778</name>
+            <pose>36.3 11.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_627147</uri>
+            <name>lamp_627147</name>
+            <pose>36.3 11.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_458528</uri>
+            <name>soilbed_458528</name>
+            <pose>36.3 11.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_478033</uri>
+            <name>tomato_478033</name>
+            <pose>36.3 13.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_478033</uri>
+            <name>flowerpot_478033</name>
+            <pose>36.3 13.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_436232</uri>
+            <name>lamp_436232</name>
+            <pose>36.3 13.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_702363</uri>
+            <name>soilbed_702363</name>
+            <pose>36.3 13.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_895929</uri>
+            <name>tomato_895929</name>
+            <pose>36.3 15.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_895929</uri>
+            <name>flowerpot_895929</name>
+            <pose>36.3 15.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_266460</uri>
+            <name>lamp_266460</name>
+            <pose>36.3 15.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_45249</uri>
+            <name>soilbed_45249</name>
+            <pose>36.3 15.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_243296</uri>
+            <name>tomato_243296</name>
+            <pose>36.3 17.244999999999997 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_243296</uri>
+            <name>flowerpot_243296</name>
+            <pose>36.3 17.244999999999997 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_916668</uri>
+            <name>lamp_916668</name>
+            <pose>36.3 17.244999999999997 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_363785</uri>
+            <name>soilbed_363785</name>
+            <pose>36.3 17.244999999999997 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_595022</uri>
+            <name>metal_595022</name>
+            <pose>38.3 11.745 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_117320</uri>
+            <name>tomato_117320</name>
+            <pose>38.3 11.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_117320</uri>
+            <name>flowerpot_117320</name>
+            <pose>38.3 11.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_252260</uri>
+            <name>lamp_252260</name>
+            <pose>38.3 11.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_998858</uri>
+            <name>soilbed_998858</name>
+            <pose>38.3 11.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_285337</uri>
+            <name>tomato_285337</name>
+            <pose>38.3 13.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_285337</uri>
+            <name>flowerpot_285337</name>
+            <pose>38.3 13.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_428069</uri>
+            <name>lamp_428069</name>
+            <pose>38.3 13.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_54514</uri>
+            <name>soilbed_54514</name>
+            <pose>38.3 13.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_524961</uri>
+            <name>tomato_524961</name>
+            <pose>38.3 15.245 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_524961</uri>
+            <name>flowerpot_524961</name>
+            <pose>38.3 15.245 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_763655</uri>
+            <name>lamp_763655</name>
+            <pose>38.3 15.245 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_559080</uri>
+            <name>soilbed_559080</name>
+            <pose>38.3 15.245 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_38603</uri>
+            <name>tomato_38603</name>
+            <pose>38.3 17.244999999999997 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_38603</uri>
+            <name>flowerpot_38603</name>
+            <pose>38.3 17.244999999999997 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_45617</uri>
+            <name>lamp_45617</name>
+            <pose>38.3 17.244999999999997 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_657727</uri>
+            <name>soilbed_657727</name>
+            <pose>38.3 17.244999999999997 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://structure_5</uri>
+            <name>structure_5</name>
+            <pose>33.3 26.49 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_322764</uri>
+            <name>metal_322764</name>
+            <pose>24.3 22.99 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_926135</uri>
+            <name>tomato_926135</name>
+            <pose>24.3 22.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_926135</uri>
+            <name>flowerpot_926135</name>
+            <pose>24.3 22.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_188535</uri>
+            <name>lamp_188535</name>
+            <pose>24.3 22.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_874699</uri>
+            <name>soilbed_874699</name>
+            <pose>24.3 22.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_621930</uri>
+            <name>tomato_621930</name>
+            <pose>24.3 24.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_621930</uri>
+            <name>flowerpot_621930</name>
+            <pose>24.3 24.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_86215</uri>
+            <name>lamp_86215</name>
+            <pose>24.3 24.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_295418</uri>
+            <name>soilbed_295418</name>
+            <pose>24.3 24.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_970694</uri>
+            <name>tomato_970694</name>
+            <pose>24.3 26.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_970694</uri>
+            <name>flowerpot_970694</name>
+            <pose>24.3 26.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_345615</uri>
+            <name>lamp_345615</name>
+            <pose>24.3 26.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_315883</uri>
+            <name>soilbed_315883</name>
+            <pose>24.3 26.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_71575</uri>
+            <name>tomato_71575</name>
+            <pose>24.3 28.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_71575</uri>
+            <name>flowerpot_71575</name>
+            <pose>24.3 28.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_658972</uri>
+            <name>lamp_658972</name>
+            <pose>24.3 28.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_294377</uri>
+            <name>soilbed_294377</name>
+            <pose>24.3 28.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_739976</uri>
+            <name>metal_739976</name>
+            <pose>26.3 22.99 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_780380</uri>
+            <name>tomato_780380</name>
+            <pose>26.3 22.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_780380</uri>
+            <name>flowerpot_780380</name>
+            <pose>26.3 22.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_694049</uri>
+            <name>lamp_694049</name>
+            <pose>26.3 22.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_159539</uri>
+            <name>soilbed_159539</name>
+            <pose>26.3 22.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_374177</uri>
+            <name>tomato_374177</name>
+            <pose>26.3 24.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_374177</uri>
+            <name>flowerpot_374177</name>
+            <pose>26.3 24.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_37953</uri>
+            <name>lamp_37953</name>
+            <pose>26.3 24.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_55849</uri>
+            <name>soilbed_55849</name>
+            <pose>26.3 24.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_767206</uri>
+            <name>tomato_767206</name>
+            <pose>26.3 26.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_767206</uri>
+            <name>flowerpot_767206</name>
+            <pose>26.3 26.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_750024</uri>
+            <name>lamp_750024</name>
+            <pose>26.3 26.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_333448</uri>
+            <name>soilbed_333448</name>
+            <pose>26.3 26.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_788330</uri>
+            <name>tomato_788330</name>
+            <pose>26.3 28.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_788330</uri>
+            <name>flowerpot_788330</name>
+            <pose>26.3 28.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_575380</uri>
+            <name>lamp_575380</name>
+            <pose>26.3 28.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_964269</uri>
+            <name>soilbed_964269</name>
+            <pose>26.3 28.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_613759</uri>
+            <name>metal_613759</name>
+            <pose>28.3 22.99 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_20941</uri>
+            <name>tomato_20941</name>
+            <pose>28.3 22.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_20941</uri>
+            <name>flowerpot_20941</name>
+            <pose>28.3 22.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_924091</uri>
+            <name>lamp_924091</name>
+            <pose>28.3 22.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_982607</uri>
+            <name>soilbed_982607</name>
+            <pose>28.3 22.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_858960</uri>
+            <name>tomato_858960</name>
+            <pose>28.3 24.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_858960</uri>
+            <name>flowerpot_858960</name>
+            <pose>28.3 24.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_469955</uri>
+            <name>lamp_469955</name>
+            <pose>28.3 24.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_131844</uri>
+            <name>soilbed_131844</name>
+            <pose>28.3 24.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_692399</uri>
+            <name>tomato_692399</name>
+            <pose>28.3 26.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_692399</uri>
+            <name>flowerpot_692399</name>
+            <pose>28.3 26.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_432941</uri>
+            <name>lamp_432941</name>
+            <pose>28.3 26.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_816379</uri>
+            <name>soilbed_816379</name>
+            <pose>28.3 26.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_376694</uri>
+            <name>tomato_376694</name>
+            <pose>28.3 28.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_376694</uri>
+            <name>flowerpot_376694</name>
+            <pose>28.3 28.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_570548</uri>
+            <name>lamp_570548</name>
+            <pose>28.3 28.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_63566</uri>
+            <name>soilbed_63566</name>
+            <pose>28.3 28.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_746388</uri>
+            <name>metal_746388</name>
+            <pose>30.3 22.99 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_131726</uri>
+            <name>tomato_131726</name>
+            <pose>30.3 22.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_131726</uri>
+            <name>flowerpot_131726</name>
+            <pose>30.3 22.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_220989</uri>
+            <name>lamp_220989</name>
+            <pose>30.3 22.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_658596</uri>
+            <name>soilbed_658596</name>
+            <pose>30.3 22.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_475062</uri>
+            <name>tomato_475062</name>
+            <pose>30.3 24.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_475062</uri>
+            <name>flowerpot_475062</name>
+            <pose>30.3 24.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_970326</uri>
+            <name>lamp_970326</name>
+            <pose>30.3 24.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_343965</uri>
+            <name>soilbed_343965</name>
+            <pose>30.3 24.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_692332</uri>
+            <name>tomato_692332</name>
+            <pose>30.3 26.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_692332</uri>
+            <name>flowerpot_692332</name>
+            <pose>30.3 26.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_462730</uri>
+            <name>lamp_462730</name>
+            <pose>30.3 26.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_501478</uri>
+            <name>soilbed_501478</name>
+            <pose>30.3 26.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_318554</uri>
+            <name>tomato_318554</name>
+            <pose>30.3 28.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_318554</uri>
+            <name>flowerpot_318554</name>
+            <pose>30.3 28.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_252478</uri>
+            <name>lamp_252478</name>
+            <pose>30.3 28.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_260474</uri>
+            <name>soilbed_260474</name>
+            <pose>30.3 28.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_289966</uri>
+            <name>metal_289966</name>
+            <pose>32.3 22.99 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_88556</uri>
+            <name>tomato_88556</name>
+            <pose>32.3 22.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_88556</uri>
+            <name>flowerpot_88556</name>
+            <pose>32.3 22.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_731071</uri>
+            <name>lamp_731071</name>
+            <pose>32.3 22.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_240492</uri>
+            <name>soilbed_240492</name>
+            <pose>32.3 22.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_510557</uri>
+            <name>tomato_510557</name>
+            <pose>32.3 24.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_510557</uri>
+            <name>flowerpot_510557</name>
+            <pose>32.3 24.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_771329</uri>
+            <name>lamp_771329</name>
+            <pose>32.3 24.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_582454</uri>
+            <name>soilbed_582454</name>
+            <pose>32.3 24.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_450331</uri>
+            <name>tomato_450331</name>
+            <pose>32.3 26.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_450331</uri>
+            <name>flowerpot_450331</name>
+            <pose>32.3 26.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_671913</uri>
+            <name>lamp_671913</name>
+            <pose>32.3 26.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_70996</uri>
+            <name>soilbed_70996</name>
+            <pose>32.3 26.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_315371</uri>
+            <name>tomato_315371</name>
+            <pose>32.3 28.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_315371</uri>
+            <name>flowerpot_315371</name>
+            <pose>32.3 28.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_326790</uri>
+            <name>lamp_326790</name>
+            <pose>32.3 28.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_916320</uri>
+            <name>soilbed_916320</name>
+            <pose>32.3 28.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_601279</uri>
+            <name>metal_601279</name>
+            <pose>34.3 22.99 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_563918</uri>
+            <name>tomato_563918</name>
+            <pose>34.3 22.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_563918</uri>
+            <name>flowerpot_563918</name>
+            <pose>34.3 22.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_78745</uri>
+            <name>lamp_78745</name>
+            <pose>34.3 22.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_491656</uri>
+            <name>soilbed_491656</name>
+            <pose>34.3 22.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_773861</uri>
+            <name>tomato_773861</name>
+            <pose>34.3 24.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_773861</uri>
+            <name>flowerpot_773861</name>
+            <pose>34.3 24.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_968057</uri>
+            <name>lamp_968057</name>
+            <pose>34.3 24.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_874253</uri>
+            <name>soilbed_874253</name>
+            <pose>34.3 24.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_645792</uri>
+            <name>tomato_645792</name>
+            <pose>34.3 26.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_645792</uri>
+            <name>flowerpot_645792</name>
+            <pose>34.3 26.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_321206</uri>
+            <name>lamp_321206</name>
+            <pose>34.3 26.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_195010</uri>
+            <name>soilbed_195010</name>
+            <pose>34.3 26.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_747068</uri>
+            <name>tomato_747068</name>
+            <pose>34.3 28.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_747068</uri>
+            <name>flowerpot_747068</name>
+            <pose>34.3 28.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_130794</uri>
+            <name>lamp_130794</name>
+            <pose>34.3 28.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_602702</uri>
+            <name>soilbed_602702</name>
+            <pose>34.3 28.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_80535</uri>
+            <name>metal_80535</name>
+            <pose>36.3 22.99 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_102095</uri>
+            <name>tomato_102095</name>
+            <pose>36.3 22.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_102095</uri>
+            <name>flowerpot_102095</name>
+            <pose>36.3 22.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_758832</uri>
+            <name>lamp_758832</name>
+            <pose>36.3 22.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_525474</uri>
+            <name>soilbed_525474</name>
+            <pose>36.3 22.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_571261</uri>
+            <name>tomato_571261</name>
+            <pose>36.3 24.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_571261</uri>
+            <name>flowerpot_571261</name>
+            <pose>36.3 24.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_749118</uri>
+            <name>lamp_749118</name>
+            <pose>36.3 24.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_503891</uri>
+            <name>soilbed_503891</name>
+            <pose>36.3 24.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_224453</uri>
+            <name>tomato_224453</name>
+            <pose>36.3 26.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_224453</uri>
+            <name>flowerpot_224453</name>
+            <pose>36.3 26.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_962397</uri>
+            <name>lamp_962397</name>
+            <pose>36.3 26.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_360751</uri>
+            <name>soilbed_360751</name>
+            <pose>36.3 26.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_744679</uri>
+            <name>tomato_744679</name>
+            <pose>36.3 28.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_744679</uri>
+            <name>flowerpot_744679</name>
+            <pose>36.3 28.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_932820</uri>
+            <name>lamp_932820</name>
+            <pose>36.3 28.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_239249</uri>
+            <name>soilbed_239249</name>
+            <pose>36.3 28.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://metal_755342</uri>
+            <name>metal_755342</name>
+            <pose>38.3 22.99 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_412493</uri>
+            <name>tomato_412493</name>
+            <pose>38.3 22.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_412493</uri>
+            <name>flowerpot_412493</name>
+            <pose>38.3 22.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_906190</uri>
+            <name>lamp_906190</name>
+            <pose>38.3 22.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_518505</uri>
+            <name>soilbed_518505</name>
+            <pose>38.3 22.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_906241</uri>
+            <name>tomato_906241</name>
+            <pose>38.3 24.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_906241</uri>
+            <name>flowerpot_906241</name>
+            <pose>38.3 24.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_618234</uri>
+            <name>lamp_618234</name>
+            <pose>38.3 24.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_71108</uri>
+            <name>soilbed_71108</name>
+            <pose>38.3 24.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_925431</uri>
+            <name>tomato_925431</name>
+            <pose>38.3 26.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_925431</uri>
+            <name>flowerpot_925431</name>
+            <pose>38.3 26.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_663319</uri>
+            <name>lamp_663319</name>
+            <pose>38.3 26.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_600032</uri>
+            <name>soilbed_600032</name>
+            <pose>38.3 26.49 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://tomato_513035</uri>
+            <name>tomato_513035</name>
+            <pose>38.3 28.49 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>model://flowerpot_513035</uri>
+            <name>flowerpot_513035</name>
+            <pose>38.3 28.49 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>model://lamp_146984</uri>
+            <name>lamp_146984</name>
+            <pose>38.3 28.49 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>model://soilbed_509193</uri>
+            <name>soilbed_509193</name>
+            <pose>38.3 28.49 0.4 0 0 0</pose>
+        </include>
+        
+
+        <include>
+          <uri>model://ground_plane</uri>
+        </include>
+
+        
+    </world>
+</sdf>

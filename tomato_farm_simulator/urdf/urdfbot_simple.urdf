@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<robot name="example_0">
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <mesh filename="file:///home/paul/dogtooth_ws/src/tomato_farm_simulator/models/2mx2m/structure_0/meshes/Structure.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+  </link>
+</robot>

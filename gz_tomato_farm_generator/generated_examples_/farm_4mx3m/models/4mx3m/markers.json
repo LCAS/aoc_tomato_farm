@@ -1,0 +1,479 @@
+[
+    {
+        "id": 1,
+        "marker_type": "STRUCTURE",
+        "translation": [
+            9.0,
+            4.0,
+            0
+        ]
+    },
+    {
+        "id": 2,
+        "marker_type": "METAL",
+        "translation": [
+            0.0,
+            0.5,
+            -0.34
+        ]
+    },
+    {
+        "id": 3,
+        "marker_type": "PLANT",
+        "translation": [
+            0.0,
+            0.0,
+            0.55
+        ]
+    },
+    {
+        "id": 4,
+        "marker_type": "FLOWERPOT",
+        "translation": [
+            0.0,
+            0.0,
+            0.5
+        ]
+    },
+    {
+        "id": 5,
+        "marker_type": "LAMP",
+        "translation": [
+            0.0,
+            0.0,
+            2.6
+        ]
+    },
+    {
+        "id": 6,
+        "marker_type": "SOILBED",
+        "translation": [
+            0.0,
+            0.0,
+            0.4
+        ]
+    },
+    {
+        "id": 7,
+        "marker_type": "PLANT",
+        "translation": [
+            0.0,
+            1.0,
+            0.55
+        ]
+    },
+    {
+        "id": 8,
+        "marker_type": "FLOWERPOT",
+        "translation": [
+            0.0,
+            1.0,
+            0.5
+        ]
+    },
+    {
+        "id": 9,
+        "marker_type": "LAMP",
+        "translation": [
+            0.0,
+            1.0,
+            2.6
+        ]
+    },
+    {
+        "id": 10,
+        "marker_type": "SOILBED",
+        "translation": [
+            0.0,
+            1.0,
+            0.4
+        ]
+    },
+    {
+        "id": 11,
+        "marker_type": "PLANT",
+        "translation": [
+            0.0,
+            2.0,
+            0.55
+        ]
+    },
+    {
+        "id": 12,
+        "marker_type": "FLOWERPOT",
+        "translation": [
+            0.0,
+            2.0,
+            0.5
+        ]
+    },
+    {
+        "id": 13,
+        "marker_type": "LAMP",
+        "translation": [
+            0.0,
+            2.0,
+            2.6
+        ]
+    },
+    {
+        "id": 14,
+        "marker_type": "SOILBED",
+        "translation": [
+            0.0,
+            2.0,
+            0.4
+        ]
+    },
+    {
+        "id": 15,
+        "marker_type": "METAL",
+        "translation": [
+            1.0,
+            0.5,
+            -0.34
+        ]
+    },
+    {
+        "id": 16,
+        "marker_type": "PLANT",
+        "translation": [
+            1.0,
+            0.0,
+            0.55
+        ]
+    },
+    {
+        "id": 17,
+        "marker_type": "FLOWERPOT",
+        "translation": [
+            1.0,
+            0.0,
+            0.5
+        ]
+    },
+    {
+        "id": 18,
+        "marker_type": "LAMP",
+        "translation": [
+            1.0,
+            0.0,
+            2.6
+        ]
+    },
+    {
+        "id": 19,
+        "marker_type": "SOILBED",
+        "translation": [
+            1.0,
+            0.0,
+            0.4
+        ]
+    },
+    {
+        "id": 20,
+        "marker_type": "PLANT",
+        "translation": [
+            1.0,
+            1.0,
+            0.55
+        ]
+    },
+    {
+        "id": 21,
+        "marker_type": "FLOWERPOT",
+        "translation": [
+            1.0,
+            1.0,
+            0.5
+        ]
+    },
+    {
+        "id": 22,
+        "marker_type": "LAMP",
+        "translation": [
+            1.0,
+            1.0,
+            2.6
+        ]
+    },
+    {
+        "id": 23,
+        "marker_type": "SOILBED",
+        "translation": [
+            1.0,
+            1.0,
+            0.4
+        ]
+    },
+    {
+        "id": 24,
+        "marker_type": "PLANT",
+        "translation": [
+            1.0,
+            2.0,
+            0.55
+        ]
+    },
+    {
+        "id": 25,
+        "marker_type": "FLOWERPOT",
+        "translation": [
+            1.0,
+            2.0,
+            0.5
+        ]
+    },
+    {
+        "id": 26,
+        "marker_type": "LAMP",
+        "translation": [
+            1.0,
+            2.0,
+            2.6
+        ]
+    },
+    {
+        "id": 27,
+        "marker_type": "SOILBED",
+        "translation": [
+            1.0,
+            2.0,
+            0.4
+        ]
+    },
+    {
+        "id": 28,
+        "marker_type": "METAL",
+        "translation": [
+            2.0,
+            0.5,
+            -0.34
+        ]
+    },
+    {
+        "id": 29,
+        "marker_type": "PLANT",
+        "translation": [
+            2.0,
+            0.0,
+            0.55
+        ]
+    },
+    {
+        "id": 30,
+        "marker_type": "FLOWERPOT",
+        "translation": [
+            2.0,
+            0.0,
+            0.5
+        ]
+    },
+    {
+        "id": 31,
+        "marker_type": "LAMP",
+        "translation": [
+            2.0,
+            0.0,
+            2.6
+        ]
+    },
+    {
+        "id": 32,
+        "marker_type": "SOILBED",
+        "translation": [
+            2.0,
+            0.0,
+            0.4
+        ]
+    },
+    {
+        "id": 33,
+        "marker_type": "PLANT",
+        "translation": [
+            2.0,
+            1.0,
+            0.55
+        ]
+    },
+    {
+        "id": 34,
+        "marker_type": "FLOWERPOT",
+        "translation": [
+            2.0,
+            1.0,
+            0.5
+        ]
+    },
+    {
+        "id": 35,
+        "marker_type": "LAMP",
+        "translation": [
+            2.0,
+            1.0,
+            2.6
+        ]
+    },
+    {
+        "id": 36,
+        "marker_type": "SOILBED",
+        "translation": [
+            2.0,
+            1.0,
+            0.4
+        ]
+    },
+    {
+        "id": 37,
+        "marker_type": "PLANT",
+        "translation": [
+            2.0,
+            2.0,
+            0.55
+        ]
+    },
+    {
+        "id": 38,
+        "marker_type": "FLOWERPOT",
+        "translation": [
+            2.0,
+            2.0,
+            0.5
+        ]
+    },
+    {
+        "id": 39,
+        "marker_type": "LAMP",
+        "translation": [
+            2.0,
+            2.0,
+            2.6
+        ]
+    },
+    {
+        "id": 40,
+        "marker_type": "SOILBED",
+        "translation": [
+            2.0,
+            2.0,
+            0.4
+        ]
+    },
+    {
+        "id": 41,
+        "marker_type": "METAL",
+        "translation": [
+            3.0,
+            0.5,
+            -0.34
+        ]
+    },
+    {
+        "id": 42,
+        "marker_type": "PLANT",
+        "translation": [
+            3.0,
+            0.0,
+            0.55
+        ]
+    },
+    {
+        "id": 43,
+        "marker_type": "FLOWERPOT",
+        "translation": [
+            3.0,
+            0.0,
+            0.5
+        ]
+    },
+    {
+        "id": 44,
+        "marker_type": "LAMP",
+        "translation": [
+            3.0,
+            0.0,
+            2.6
+        ]
+    },
+    {
+        "id": 45,
+        "marker_type": "SOILBED",
+        "translation": [
+            3.0,
+            0.0,
+            0.4
+        ]
+    },
+    {
+        "id": 46,
+        "marker_type": "PLANT",
+        "translation": [
+            3.0,
+            1.0,
+            0.55
+        ]
+    },
+    {
+        "id": 47,
+        "marker_type": "FLOWERPOT",
+        "translation": [
+            3.0,
+            1.0,
+            0.5
+        ]
+    },
+    {
+        "id": 48,
+        "marker_type": "LAMP",
+        "translation": [
+            3.0,
+            1.0,
+            2.6
+        ]
+    },
+    {
+        "id": 49,
+        "marker_type": "SOILBED",
+        "translation": [
+            3.0,
+            1.0,
+            0.4
+        ]
+    },
+    {
+        "id": 50,
+        "marker_type": "PLANT",
+        "translation": [
+            3.0,
+            2.0,
+            0.55
+        ]
+    },
+    {
+        "id": 51,
+        "marker_type": "FLOWERPOT",
+        "translation": [
+            3.0,
+            2.0,
+            0.5
+        ]
+    },
+    {
+        "id": 52,
+        "marker_type": "LAMP",
+        "translation": [
+            3.0,
+            2.0,
+            2.6
+        ]
+    },
+    {
+        "id": 53,
+        "marker_type": "SOILBED",
+        "translation": [
+            3.0,
+            2.0,
+            0.4
+        ]
+    }
+]

@@ -1,0 +1,161 @@
+material branch
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture AG15brn1.png
+      }
+    }
+  }
+}
+
+material leaf1
+{
+  technique
+  {
+    pass
+    {
+      alpha_rejection greater 128
+      
+      texture_unit
+      {
+        texture AG15lef1.png
+      }
+    }
+  }
+}
+
+material leaf2
+{
+  technique
+  {
+    pass
+    {
+      alpha_rejection greater 128
+      
+      texture_unit
+      {
+        texture AG15lef2.png
+      }
+    }
+  }
+}
+
+material fruit1
+{
+  technique
+  {
+    pass
+    {
+      alpha_rejection greater 128
+      
+      texture_unit
+      {
+        texture AG15frt1.png
+      }
+    }
+  }
+}
+
+material fruit2
+{
+  technique
+  {
+    pass
+    {
+      alpha_rejection greater 128
+      
+      texture_unit
+      {
+        texture AG15frt2.png
+      }
+    }
+  }
+}
+
+material fruit3
+{
+  technique
+  {
+    pass
+    {
+      alpha_rejection greater 128
+      
+      texture_unit
+      {
+        texture AG15frt3.png
+      }
+    }
+  }
+}
+
+material fruit4
+{
+  technique
+  {
+    pass
+    {
+      alpha_rejection greater 128
+      
+      texture_unit
+      {
+        texture AG15frt4.png
+      }
+    }
+  }
+}
+
+material blossom1
+{
+  technique
+  {
+    pass
+    {
+      alpha_rejection greater 128
+      
+      texture_unit
+      {
+        texture AG15blo1.png
+      }
+    }
+  }
+}
+
+material blossom2
+{
+  technique
+  {
+    pass
+    {
+      alpha_rejection greater 128
+      
+      texture_unit
+      {
+        texture AG15blo2.png
+      }
+    }
+  }
+}
+
+material blossom3
+{
+  technique
+  {
+    pass
+    {
+      alpha_rejection greater 128
+      
+      texture_unit
+      {
+        texture AG15blo3.png
+      }
+    }
+  }
+}
+
+
+
+
