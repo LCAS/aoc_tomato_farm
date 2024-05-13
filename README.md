@@ -82,11 +82,11 @@ If you do not want to use lights in your gazebo simulation, before generate your
 # How to Generate a New Glass house Tomato Farm in Unity
 
 ## Unity Setup
-Go to https://unity.com/download and download Unity Hub. Once it is done, install Install Unity 2022.3.17f1 via Unity Hub. After successful installation the version will be available under the Installs tab in Unity Hub. 
+Go to https://unity.com/download and download Unity Hub. Once it is done, install Unity 2022.3.17f1 via Unity Hub. After successful installation the version will be available under the Installs tab in Unity Hub. 
 
 ## Add your **unity_tomato_farm_generator** project
 
-Initialize your Unity Hub, go to the projects window and press the "Add" button. After press "Add" button you will need to find your **aoc_tomato_farm/unity_tomato_farm_generator** and open it, your unity project will be displayed. 
+Initialize your Unity Hub, go to the projects window and press the "Add" button. After press "Add" button you will need to find your **aoc_tomato_farm/unity_tomato_farm_generator** and open it. Your unity project will be displayed. 
 
 In this Unity project , the farm size, the number of rows, the number of plants in each row, the distance between each plant and each row, the quantity of glass houses and the attenuation of the lights can be parametrically adjusted. Each plant in the farm is generated randomly, including locations of stems, leaves, fruits and so on. 
 
@@ -98,18 +98,20 @@ Once you have finished your customization of your environment, you can see a pre
 To generate your simulation, go to the option ***file*** of the menu and select ***Build Settings...***. In build settings, select  button ***build*** and save your project in the folder generated for this special environment with the format ***environment.x86_64***. 
 
 ## Run Unity Simulation
-To use a generated tomato farm in simulation, you can  modify launch file (unity_Launch.py) accordingly or openinig directly your .x86_64 file in **tomato_farm_simulator/worlds/environment.x86_64** folder.  In adittion, you can stay in Unity's play mode all what you want before export your project, it is possible to test your project only using the play mode of Unity. 
+To use a generated tomato farm in simulation, you can  modify launch file (unity_Launch.py) accordingly or openinig directly your environment.x86_64 file in **tomato_farm_simulator/worlds/environment.x86_64** folder.  In adittion, you can stay in Unity's play mode all what you want before export your project, it is possible to test your project only using the play mode of Unity. 
 
 ### Display both environmets at the same time
 You can display both, Unity and Gazebo environments, using **tomato_farm_simulator/worlds/GazeboxUnity.launch.py**
 
 ## Connect the Unity environment with ROS2
 
-Please refer to the README of "ros2-for-unity" package for setup of communication between the tomato environment and ROS2. 
+Please refer to the README of "ros2-for-unity" package for setup of communication between the tomato environment and ROS2 and import the package into the asset folder of your ***unity_tomato_farm_generator***
 
 https://github.com/RobotecAI/ros2-for-unity
 
-Once ROS2 For Unity is installed, you can modify the example scripts and associate them to your models to interact with your tomato farm environment. You can import your models directly to your environment usign 
+Once ROS2 For Unity is installed, you can modify the example scripts and associate them to your models to interact with your tomato farm environment. 
+
+You can import your models directly to your environment usign 
 "URDF-Importer" package. 
 
 https://github.com/Unity-Technologies/URDF-Importer
