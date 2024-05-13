@@ -20,6 +20,21 @@
           <diffuse>1.0 1.0 1.0</diffuse>
         </material>
       </visual>
+
+      <light name='lightComponent' type='point'>
+        <diffuse>0.37 0.203 0.513 1</diffuse>
+        <specular>0.1 0.1 0.1 1</specular>
+        <attenuation>
+          <range>7</range>
+          <constant>{{cookiecutter.light_constant}}</constant>     
+          <linear>{{cookiecutter.light_linear}}</linear>
+          <quadratic>{{cookiecutter.light_quadratic}}</quadratic>
+        </attenuation>
+        <cast_shadows>1</cast_shadows>
+        <direction>0 0 -1</direction>
+      </light>
+
+
     </link>
   </model>
 </sdf>

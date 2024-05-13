@@ -1,5 +1,9 @@
 {
-    "world_name": "WORLD NAME",
-    "lamp_name": "lamp_name",
-    "models": "models"
+    "world_name": "WORLD_NAME",
+    "light_constant":"LIGHT_CONSTANT",
+    "light_linear": "LIGHT_LINEAR",
+    "light_quadratic": "LIGHT_QUADRATIC",
+    "lamp_name": "lamp_name", 
+    "models": "models" 
+
 }
