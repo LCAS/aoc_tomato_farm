@@ -64,79 +64,8 @@
     <Analyzer Include="/home/paul/Unity/Hub/Editor/2022.3.17f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Ros2ForUnity/Scripts/ROS2ListenerExample.cs" />
-    <Compile Include="Assets/Ros2ForUnity/Scripts/ROS2PerformanceTest.cs" />
-    <Compile Include="Assets/Scripts/FollowPlayerX.cs" />
-    <Compile Include="Assets/Ros2ForUnity/Scripts/ROS2UnityComponent.cs" />
-    <Compile Include="Assets/Ros2ForUnity/Scripts/ROS2UnityCore.cs" />
-    <Compile Include="Assets/Ros2ForUnity/Scripts/Transformations.cs" />
-    <Compile Include="Assets/Ros2ForUnity/Scripts/ROS2ForUnity.cs" />
     <Compile Include="Assets/Scripts/GeneradorDeEscenario.cs" />
-    <Compile Include="Assets/Ros2ForUnity/Scripts/Time/ROS2TimeSource.cs" />
-    <Compile Include="Assets/Ros2ForUnity/Scripts/Time/ITimeSource.cs" />
-    <Compile Include="Assets/Ros2ForUnity/Scripts/Sensor.cs" />
-    <Compile Include="Assets/Ros2ForUnity/Scripts/Time/UnityTimeSource.cs" />
-    <Compile Include="Assets/Ros2ForUnity/Scripts/ROS2TalkerExample.cs" />
-    <Compile Include="Assets/Ros2ForUnity/Scripts/Time/DotnetTimeSource.cs" />
-    <Compile Include="Assets/Ros2ForUnity/Scripts/Time/TimeUtils.cs" />
-    <Compile Include="Assets/Ros2ForUnity/Scripts/Time/ROS2ScalableTimeSource.cs" />
-    <Compile Include="Assets/Ros2ForUnity/Scripts/ROS2ServiceExample.cs" />
-    <Compile Include="Assets/Ros2ForUnity/Scripts/ROS2Node.cs" />
-    <Compile Include="Assets/Ros2ForUnity/Scripts/Time/ROS2Clock.cs" />
-    <Compile Include="Assets/Ros2ForUnity/Scripts/ROS2ClientExample.cs" />
     <Compile Include="Assets/Scripts/cameraController.cs" />
-    <Compile Include="Assets/Ros2ForUnity/Scripts/PostInstall.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets/Ros2ForUnity/metadata_ros2cs.xml" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets/Ros2ForUnity/Plugins/metadata_ros2cs.xml" />
-    <None Include="Assets/Ros2ForUnity/Plugins/composition_interfaces_assembly.dll" />
-    <None Include="Assets/Ros2ForUnity/Plugins/action_msgs_assembly.dll" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
-    <None Include="Assets/Ros2ForUnity/Plugins/statistics_msgs_assembly.dll" />
-    <None Include="Assets/Ros2ForUnity/Plugins/shape_msgs_assembly.dll" />
-    <None Include="Assets/Ros2ForUnity/Plugins/lifecycle_msgs_assembly.dll" />
-    <None Include="Assets/Ros2ForUnity/Plugins/test_msgs_assembly.dll" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
-    <None Include="Assets/Ros2ForUnity/Plugins/diagnostic_msgs_assembly.dll" />
-    <None Include="Assets/Ros2ForUnity/Plugins/visualization_msgs_assembly.dll" />
-    <None Include="Assets/Ros2ForUnity/metadata_ros2_for_unity.xml" />
-    <None Include="Assets/Ros2ForUnity/Plugins/sensor_msgs_assembly.dll" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
-    <None Include="Assets/Ros2ForUnity/Plugins/ros2cs_common.dll" />
-    <None Include="Assets/Ros2ForUnity/Plugins/std_msgs_assembly.dll" />
-    <None Include="Assets/Ros2ForUnity/Plugins/example_interfaces_assembly.dll" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets/Ros2ForUnity/Plugins/trajectory_msgs_assembly.dll" />
-    <None Include="Assets/Ros2ForUnity/Plugins/std_srvs_assembly.dll" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
-    <None Include="Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets/Ros2ForUnity/Plugins/nav_msgs_assembly.dll" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader" />
-    <None Include="Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc" />
-    <None Include="Assets/Ros2ForUnity/Plugins/ros2cs_core.dll" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc" />
-    <None Include="Assets/Ros2ForUnity/Plugins/unique_identifier_msgs_assembly.dll" />
-    <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
-    <None Include="Assets/Ros2ForUnity/Plugins/actionlib_msgs_assembly.dll" />
-    <None Include="Assets/Ros2ForUnity/Plugins/stereo_msgs_assembly.dll" />
-    <None Include="Assets/Ros2ForUnity/Plugins/tf2_msgs_assembly.dll" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets/Ros2ForUnity/Plugins/rcl_interfaces_assembly.dll" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
-    <None Include="Assets/Ros2ForUnity/Plugins/Linux/x86_64/metadata_ros2cs.xml" />
-    <None Include="Assets/Ros2ForUnity/Plugins/geometry_msgs_assembly.dll" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
-    <None Include="Assets/Ros2ForUnity/Plugins/rosgraph_msgs_assembly.dll" />
-    <None Include="Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" />
-    <None Include="Assets/Ros2ForUnity/Plugins/builtin_interfaces_assembly.dll" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -467,108 +396,12 @@
       <HintPath>/home/paul/Unity/Hub/Editor/2022.3.17f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="composition_interfaces_assembly">
-      <HintPath>Assets/Ros2ForUnity/Plugins/composition_interfaces_assembly.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="action_msgs_assembly">
-      <HintPath>Assets/Ros2ForUnity/Plugins/action_msgs_assembly.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="statistics_msgs_assembly">
-      <HintPath>Assets/Ros2ForUnity/Plugins/statistics_msgs_assembly.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="ReportGeneratorMerged">
       <HintPath>Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="shape_msgs_assembly">
-      <HintPath>Assets/Ros2ForUnity/Plugins/shape_msgs_assembly.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="lifecycle_msgs_assembly">
-      <HintPath>Assets/Ros2ForUnity/Plugins/lifecycle_msgs_assembly.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="test_msgs_assembly">
-      <HintPath>Assets/Ros2ForUnity/Plugins/test_msgs_assembly.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="diagnostic_msgs_assembly">
-      <HintPath>Assets/Ros2ForUnity/Plugins/diagnostic_msgs_assembly.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="visualization_msgs_assembly">
-      <HintPath>Assets/Ros2ForUnity/Plugins/visualization_msgs_assembly.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="sensor_msgs_assembly">
-      <HintPath>Assets/Ros2ForUnity/Plugins/sensor_msgs_assembly.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="ros2cs_common">
-      <HintPath>Assets/Ros2ForUnity/Plugins/ros2cs_common.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="std_msgs_assembly">
-      <HintPath>Assets/Ros2ForUnity/Plugins/std_msgs_assembly.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="example_interfaces_assembly">
-      <HintPath>Assets/Ros2ForUnity/Plugins/example_interfaces_assembly.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="trajectory_msgs_assembly">
-      <HintPath>Assets/Ros2ForUnity/Plugins/trajectory_msgs_assembly.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="std_srvs_assembly">
-      <HintPath>Assets/Ros2ForUnity/Plugins/std_srvs_assembly.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="nav_msgs_assembly">
-      <HintPath>Assets/Ros2ForUnity/Plugins/nav_msgs_assembly.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="ros2cs_core">
-      <HintPath>Assets/Ros2ForUnity/Plugins/ros2cs_core.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library/PackageCache/com.unity.visualscripting@1.9.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="unique_identifier_msgs_assembly">
-      <HintPath>Assets/Ros2ForUnity/Plugins/unique_identifier_msgs_assembly.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="actionlib_msgs_assembly">
-      <HintPath>Assets/Ros2ForUnity/Plugins/actionlib_msgs_assembly.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="stereo_msgs_assembly">
-      <HintPath>Assets/Ros2ForUnity/Plugins/stereo_msgs_assembly.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="tf2_msgs_assembly">
-      <HintPath>Assets/Ros2ForUnity/Plugins/tf2_msgs_assembly.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="rcl_interfaces_assembly">
-      <HintPath>Assets/Ros2ForUnity/Plugins/rcl_interfaces_assembly.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="geometry_msgs_assembly">
-      <HintPath>Assets/Ros2ForUnity/Plugins/geometry_msgs_assembly.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="rosgraph_msgs_assembly">
-      <HintPath>Assets/Ros2ForUnity/Plugins/rosgraph_msgs_assembly.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="builtin_interfaces_assembly">
-      <HintPath>Assets/Ros2ForUnity/Plugins/builtin_interfaces_assembly.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="netstandard">

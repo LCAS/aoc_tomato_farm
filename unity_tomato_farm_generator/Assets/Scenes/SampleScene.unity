@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657832, g: 0.49641222, b: 0.57481664, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -188,13 +188,13 @@ MonoBehaviour:
   metalSuport: {fileID: 6489228426519156956, guid: 12871cc77688d40d1abf52bb8fa2a4b4, type: 3}
   Hoja1: {fileID: 2100000, guid: 60618f4bd1f2a709d811b1f8992fc2a8, type: 2}
   Hoja2: {fileID: 2100000, guid: 6c21bc677ab67b804b72e2acaae1523f, type: 2}
-  rowL: 8
+  rowL: 6
   n_Rows: 4
   dPlant: 1
-  dRow: 1
-  lampIntensity: 0
-  GlassHouseperline: 3
-  linesofGlassHouse: 2
+  dRow: 2
+  lampIntensity: 0.4
+  GlassHouseperline: 1
+  linesofGlassHouse: 1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0

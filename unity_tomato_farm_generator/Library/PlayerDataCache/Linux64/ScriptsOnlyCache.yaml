@@ -5,35 +5,11 @@ ScriptsOnlyBuild:
     - cameraController
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    Unity.TextMeshPro:
-    - TMPro.TMP_FontAsset
-    - TMPro.TMP_Settings
-    - TMPro.TMP_SpriteAsset
-    - TMPro.TMP_StyleSheet
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
-  serializedClasses:
-    Unity.TextMeshPro:
-    - TMPro.FaceInfo_Legacy
-    - TMPro.FontAssetCreationSettings
-    - TMPro.KerningTable
-    - TMPro.TMP_Character
-    - TMPro.TMP_FontFeatureTable
-    - TMPro.TMP_FontWeightPair
-    - TMPro.TMP_GlyphAdjustmentRecord
-    - TMPro.TMP_GlyphPairAdjustmentRecord
-    - TMPro.TMP_GlyphValueRecord
-    - TMPro.TMP_Sprite
-    - TMPro.TMP_SpriteCharacter
-    - TMPro.TMP_SpriteGlyph
-    - TMPro.TMP_Style
-    UnityEngine.TextCoreFontEngineModule:
-    - UnityEngine.TextCore.FaceInfo
-    - UnityEngine.TextCore.Glyph
-    - UnityEngine.TextCore.GlyphMetrics
-    - UnityEngine.TextCore.GlyphRect
+  serializedClasses: {}
   methodsToPreserve: []
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
@@ -55,8 +31,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 49
-      Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
     - Class: 89
@@ -66,20 +40,10 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1932}
+      Script: {instanceID: 1802}
     - Class: 114
-      Script: {instanceID: 2384}
-    - Class: 114
-      Script: {instanceID: 4670}
-    - Class: 114
-      Script: {instanceID: 4850}
-    - Class: 114
-      Script: {instanceID: 5166}
-    - Class: 114
-      Script: {instanceID: 6056}
+      Script: {instanceID: 3926}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -148,12 +112,6 @@ ScriptsOnlyBuild:
     className: UnityOnMouseExitMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 6ac4f691f4318c32aad5418e83a3a975
-    assemblyName: Assembly-CSharp
-    namespaceName: ROS2
-    className: ROS2TalkerExample
-  - hash:
-      serializedVersion: 2
       Hash: b12640dfdb5966813e9dd838893e6c4a
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -196,12 +154,6 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 39381d51b8048203d5998588c49d87c6
-    assemblyName: Assembly-CSharp
-    namespaceName: ROS2
-    className: ROS2UnityComponent
-  - hash:
-      serializedVersion: 2
       Hash: 1321993db8249e1e05e1e0492b2bbdc3
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -242,12 +194,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 3d510d231145a9afa8e6e5c1c4b36b0c
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ROS2ServiceExample
   - hash:
       serializedVersion: 2
       Hash: fce9b835d1e8b08e7ecea8da19f21986
@@ -302,12 +248,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: TestResultRendererCallback
-  - hash:
-      serializedVersion: 2
-      Hash: 7bce5c16689a3fe1354ef456e64d353a
-    assemblyName: Assembly-CSharp
-    namespaceName: ROS2
-    className: ROS2PerformanceTest
   - hash:
       serializedVersion: 2
       Hash: b98001682cba83786775c9e415b89a61
@@ -616,16 +556,16 @@ ScriptsOnlyBuild:
     className: HorizontalLayoutGroup
   - hash:
       serializedVersion: 2
-      Hash: 0c0b64d103fe555d830e8ca206abd12a
-    assemblyName: Unity.VisualScripting.Core
-    namespaceName: Unity.VisualScripting
-    className: UnityOnTriggerExitMessageListener
-  - hash:
-      serializedVersion: 2
       Hash: 191cd500c627cd6682ef6f70b8e47f2c
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnCollisionEnter2DMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 0c0b64d103fe555d830e8ca206abd12a
+    assemblyName: Unity.VisualScripting.Core
+    namespaceName: Unity.VisualScripting
+    className: UnityOnTriggerExitMessageListener
   - hash:
       serializedVersion: 2
       Hash: 17f82e3e7d8f8b07a270a4aad9bfe79d
@@ -662,12 +602,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Text
-  - hash:
-      serializedVersion: 2
-      Hash: c2b888cba7619b92a943c602f8761af1
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: FollowPlayerX
   - hash:
       serializedVersion: 2
       Hash: 1ce63d97d1ca25cba2d91d5f32fd5f79
@@ -784,12 +718,6 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionExitMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 8dcc54ed1ca9a10112ecf4f9ae8e993e
-    assemblyName: Assembly-CSharp
-    namespaceName: ROS2
-    className: ROS2ListenerExample
-  - hash:
-      serializedVersion: 2
       Hash: d2ecd94550edf1b56aff07b1f4e41c57
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -880,12 +808,6 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
-      Hash: f103e895b212fccd1df3526cad3a91e9
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ROS2ClientExample
-  - hash:
-      serializedVersion: 2
       Hash: d5cd7f207e91ca8336c65a577a6fb2a0
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -965,4 +887,4 @@ ScriptsOnlyBuild:
   platform: 24
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: /home/paul/dogtooth_ws/src/tomato_farm_simulator/worlds/8mx4mU/8mx4mU.x86_64
+  playerPath: /home/paul/dogtooth_ws/src/tomato_farm_simulator/worlds/6mx4mU/6mx4mU.x86_64
