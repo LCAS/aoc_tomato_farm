@@ -37,15 +37,29 @@ public class GeneradorDeEscenario : MonoBehaviour
 
     public int linesofGlassHouse= 1;
 
+    public int environment= 0;
+
     
     void Start()
     {
+       if(environment == 0){
+          autoGlassHouse(n_Rows, rowL);  
+       }
 
-       //This is the tomato land
+       else if(environment == 1){
+          GenerarLand();
+       }
+       
+       else{
+        Debug.LogWarning("Currently you can only select between 0 and 1"); 
+       }
+
+        //This is the tomato land
         //GenerarLand();
        
        //This is for the Glass House
-       autoGlassHouse(n_Rows, rowL);
+       //autoGlassHouse(n_Rows, rowL);
+
     }
     void GenerateGlassHouse(float g, float h)
     {
@@ -529,8 +543,8 @@ public class GeneradorDeEscenario : MonoBehaviour
     void TomatoRandom(float x, float z, float y, int randomIndex, float g, float h){
                 Vector3 posPlants= new Vector3(x*dRow-9+25.3f*(g), 0.55f, z*dPlant-16.3f);
 
-                int tomatoNumber= UnityEngine.Random.Range(1,2);
-                int leafNumber= UnityEngine.Random.Range(3,5);    
+                int tomatoNumber= UnityEngine.Random.Range(0,2);
+                int leafNumber= UnityEngine.Random.Range(3,8);    
                 int randomSpecial= UnityEngine.Random.Range(0,1);
                 int randomSpecial1= UnityEngine.Random.Range(0,1);
                 GameObject randomPlant = UnityEngine.Random.Range(0, 2) == 0 ? tomatoPlant : tomatoPlant2;

@@ -1,0 +1,854 @@
+<?xml version="1.0" ?>
+<sdf version='1.7'>
+    <world name='field'>
+        <physics name="1ms" type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+    <plugin
+      filename="gz-sim-physics-system"
+      name="gz::sim::systems::Physics">
+    </plugin>
+    <plugin
+      filename="gz-sim-sensors-system"
+      name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin
+      filename="gz-sim-user-commands-system"
+      name="gz::sim::systems::UserCommands">
+    </plugin>
+    <plugin
+      filename="gz-sim-scene-broadcaster-system"
+      name="gz::sim::systems::SceneBroadcaster">
+    </plugin>
+
+    <gui fullscreen="0">
+
+      <!-- 3D scene -->
+      <plugin filename="MinimalScene" name="3D View">
+        <gz-gui>
+          <title>3D View</title>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">docked</property>
+        </gz-gui>
+
+        <engine>ogre2</engine>
+        <scene>scene</scene>
+        <ambient_light>0.4 0.4 0.4</ambient_light>
+        <background_color>0.8 0.8 0.8</background_color>
+        <camera_pose>-6 0 6 0 0.5 0</camera_pose>
+      </plugin>
+
+      <!-- Plugins that add functionality to the scene -->
+      <plugin filename="EntityContextMenuPlugin" name="Entity context menu">
+        <gz-gui>
+          <property key="state" type="string">floating</property>
+          <property key="width" type="double">5</property>
+          <property key="height" type="double">5</property>
+          <property key="showTitleBar" type="bool">false</property>
+        </gz-gui>
+      </plugin>
+      <plugin filename="GzSceneManager" name="Scene Manager">
+        <gz-gui>
+          <property key="resizable" type="bool">false</property>
+          <property key="width" type="double">5</property>
+          <property key="height" type="double">5</property>
+          <property key="state" type="string">floating</property>
+          <property key="showTitleBar" type="bool">false</property>
+        </gz-gui>
+      </plugin>
+      <plugin filename="InteractiveViewControl" name="Interactive view control">
+        <gz-gui>
+          <property key="resizable" type="bool">false</property>
+          <property key="width" type="double">5</property>
+          <property key="height" type="double">5</property>
+          <property key="state" type="string">floating</property>
+          <property key="showTitleBar" type="bool">false</property>
+        </gz-gui>
+      </plugin>
+      <plugin filename="CameraTracking" name="Camera Tracking">
+        <gz-gui>
+          <property key="resizable" type="bool">false</property>
+          <property key="width" type="double">5</property>
+          <property key="height" type="double">5</property>
+          <property key="state" type="string">floating</property>
+          <property key="showTitleBar" type="bool">false</property>
+        </gz-gui>
+      </plugin>
+      <!-- World control -->
+      <plugin filename="WorldControl" name="World control">
+        <gz-gui>
+          <title>World control</title>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="bool" key="resizable">false</property>
+          <property type="double" key="height">72</property>
+          <property type="double" key="width">121</property>
+          <property type="double" key="z">1</property>
+
+          <property type="string" key="state">floating</property>
+          <anchors target="3D View">
+            <line own="left" target="left"/>
+            <line own="bottom" target="bottom"/>
+          </anchors>
+        </gz-gui>
+
+        <play_pause>true</play_pause>
+        <step>true</step>
+        <start_paused>true</start_paused>
+        <use_event>true</use_event>
+
+      </plugin>
+
+      <!-- World statistics -->
+      <plugin filename="WorldStats" name="World stats">
+        <gz-gui>
+          <title>World stats</title>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="bool" key="resizable">false</property>
+          <property type="double" key="height">110</property>
+          <property type="double" key="width">290</property>
+          <property type="double" key="z">1</property>
+
+          <property type="string" key="state">floating</property>
+          <anchors target="3D View">
+            <line own="right" target="right"/>
+            <line own="bottom" target="bottom"/>
+          </anchors>
+        </gz-gui>
+
+        <sim_time>true</sim_time>
+        <real_time>true</real_time>
+        <real_time_factor>true</real_time_factor>
+        <iterations>true</iterations>
+      </plugin>
+
+      <!-- Inspector -->
+      <plugin filename="ComponentInspector" name="Component inspector">
+        <gz-gui>
+          <property type="string" key="state">docked</property>
+        </gz-gui>
+      </plugin>
+
+      <!-- Entity tree -->
+      <plugin filename="EntityTree" name="Entity tree">
+        <gz-gui>
+          <property type="string" key="state">docked</property>
+        </gz-gui>
+      </plugin>
+
+      <plugin filename="ImageDisplay" name="Image Display">
+        <gz-gui>
+          <title>RGB camera</title>
+          <property key="state" type="string">floating</property>
+          <property type="double" key="width">350</property>
+          <property type="double" key="height">315</property>
+        </gz-gui>
+        <topic>camera</topic>
+        <topic_picker>false</topic_picker>
+      </plugin>
+      <plugin filename="ImageDisplay" name="Image Display 2">
+        <gz-gui>
+          <title>Depth camera</title>
+          <property key="state" type="string">floating</property>
+          <property type="double" key="width">350</property>
+          <property type="double" key="height">315</property>
+          <property type="double" key="x">500</property>
+        </gz-gui>
+        <topic>depth_camera</topic>
+        <topic_picker>false</topic_picker>
+      </plugin>
+      <plugin filename="ImageDisplay" name="Image Display 3">
+        <gz-gui>
+          <title>RGBD: image</title>
+          <property key="state" type="string">floating</property>
+          <property type="double" key="width">350</property>
+          <property type="double" key="height">315</property>
+          <property type="double" key="y">320</property>
+        </gz-gui>
+        <topic>rgbd_camera/image</topic>
+        <topic_picker>false</topic_picker>
+      </plugin>
+      <plugin filename="ImageDisplay" name="Image Display 3">
+        <gz-gui>
+          <title>RGBD: depth</title>
+          <property key="state" type="string">floating</property>
+          <property type="double" key="width">350</property>
+          <property type="double" key="height">315</property>
+          <property type="double" key="x">500</property>
+          <property type="double" key="y">320</property>
+        </gz-gui>
+        <topic>rgbd_camera/depth_image</topic>
+        <topic_picker>false</topic_picker>
+      </plugin>
+      <!--
+      <plugin filename="ImageDisplay" name="Image Display 5">
+        <gz-gui>
+          <title>Thermal camera</title>
+          <property key="state" type="string">floating</property>
+          <property type="double" key="width">350</property>
+          <property type="double" key="height">315</property>
+          <property type="double" key="x">500</property>
+          <property type="double" key="y">640</property>
+        </gz-gui>
+        <topic>thermal_camera</topic>
+        <topic_picker>false</topic_picker>
+      </plugin>-->
+    </gui>
+
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+    
+    <model name="cameras_alone">
+      <pose>0 1.0 2.0 0.0 0.3 3.14</pose>
+      <link name="link">
+        <pose>0.05 0.05 0.05 0 0 0</pose>
+        <inertial>
+          <mass>0.1</mass>
+          <inertia>
+            <ixx>0.000166667</ixx>
+            <iyy>0.000166667</iyy>
+            <izz>0.000166667</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+        </visual>
+        <sensor name="cameras_alone" type="camera">
+          <camera>
+            <horizontal_fov>1.047</horizontal_fov>
+            <image>
+              <width>320</width>
+              <height>240</height>
+            </image>
+            <clip>
+              <near>0.1</near>
+              <far>100</far>
+            </clip>
+          </camera>
+          <always_on>1</always_on>
+          <update_rate>30</update_rate>
+          <visualize>true</visualize>
+          <topic>camera_alone</topic>
+          <enable_metrics>true</enable_metrics>
+        </sensor>
+        <sensor name="depth_camera1" type="depth_camera">
+          <update_rate>10</update_rate>
+          <topic>depth_camera</topic>
+          <enable_metrics>true</enable_metrics>
+          <camera>
+            <horizontal_fov>1.05</horizontal_fov>
+            <image>
+              <width>320</width>
+              <height>240</height>
+              <format>R_FLOAT32</format>
+            </image>
+            <clip>
+              <near>0.1</near>
+              <far>10.0</far>
+            </clip>
+          </camera>
+          </sensor>
+      </link>
+      <static>true</static>
+    </model>
+
+    <model name="camera_with_lidar">
+      <pose>0 -1.0 2.0 0.0 0.3 3.14</pose>
+      <link name="link">
+        <pose>0.05 0.05 0.05 0 0 0</pose>
+        <inertial>
+          <mass>0.1</mass>
+          <inertia>
+            <ixx>0.000166667</ixx>
+            <iyy>0.000166667</iyy>
+            <izz>0.000166667</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+        </visual>
+        <sensor name="camera" type="camera">
+          <camera>
+            <horizontal_fov>1.047</horizontal_fov>
+            <image>
+              <width>320</width>
+              <height>240</height>
+            </image>
+            <clip>
+              <near>0.1</near>
+              <far>100</far>
+            </clip>
+          </camera>
+          <always_on>1</always_on>
+          <update_rate>30</update_rate>
+          <visualize>true</visualize>
+          <topic>camera</topic>
+        </sensor>
+
+        <sensor name='gpu_lidar' type='gpu_lidar'>"
+          <topic>lidar</topic>
+          <update_rate>10</update_rate>
+          <enable_metrics>true</enable_metrics>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>640</samples>
+                <resolution>1</resolution>
+                <min_angle>-1.396263</min_angle>
+                <max_angle>1.396263</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>1</samples>
+                <resolution>0.01</resolution>
+                <min_angle>0</min_angle>
+                <max_angle>0</max_angle>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.08</min>
+              <max>10.0</max>
+              <resolution>0.01</resolution>
+            </range>
+          </ray>
+          <alwaysOn>1</alwaysOn>
+          <visualize>true</visualize>
+        </sensor>
+      </link>
+
+      <static>true</static>
+    </model>
+
+    <model name="rgbd_camera">
+      <pose>0 5.0 2.0 0.0 0.3 3.14</pose>
+      <link name="link">
+        <pose>0.05 0.05 0.05 0 0 0</pose>
+        <inertial>
+          <mass>0.1</mass>
+          <inertia>
+            <ixx>0.000166667</ixx>
+            <iyy>0.000166667</iyy>
+            <izz>0.000166667</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+        </visual>
+        <sensor name="rgbd_camera" type="rgbd_camera">
+          <camera>
+            <horizontal_fov>1.047</horizontal_fov>
+            <image>
+              <width>320</width>
+              <height>240</height>
+            </image>
+            <clip>
+              <near>0.1</near>
+              <far>100</far>
+            </clip>
+          </camera>
+          <always_on>1</always_on>
+          <update_rate>30</update_rate>
+          <visualize>true</visualize>
+          <topic>rgbd_camera</topic>
+          <enable_metrics>true</enable_metrics>
+        </sensor>
+      </link>
+    </model>
+
+    <!--<model name="thermal_camera">
+      <pose>0 -3.0 2.0 0.0 0.3 3.14</pose>
+      <link name="link">
+        <pose>0.05 0.05 0.05 0 0 0</pose>
+        <inertial>
+          <mass>0.1</mass>
+          <inertia>
+            <ixx>0.000166667</ixx>
+            <iyy>0.000166667</iyy>
+            <izz>0.000166667</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 0.1 0.1</size>
+            </box>
+          </geometry>
+        </visual>
+        <sensor name="thermal_camera" type="thermal_camera">
+          <camera>
+            <horizontal_fov>1.047</horizontal_fov>
+            <image>
+              <width>320</width>
+              <height>240</height>
+            </image>
+            <clip>
+              <near>0.1</near>
+              <far>100</far>
+            </clip>
+          </camera>
+          <always_on>1</always_on>
+          <update_rate>30</update_rate>
+          <visualize>true</visualize>
+          <topic>thermal_camera</topic>
+        </sensor>
+      </link>
+    </model>-->
+        
+
+
+        
+        <include>
+            <uri>structure_0</uri>
+            <name>structure_0</name>
+            <pose>9.0 4.0 0 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>metal_48946</uri>
+            <name>metal_48946</name>
+            <pose>0.0 0.5 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>tomato_232004</uri>
+            <name>tomato_232004</name>
+            <pose>0.0 0.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>flowerpot_232004</uri>
+            <name>flowerpot_232004</name>
+            <pose>0.0 0.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>lamp_910433</uri>
+            <name>lamp_910433</name>
+            <pose>0.0 0.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>soilbed_168228</uri>
+            <name>soilbed_168228</name>
+            <pose>0.0 0.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>tomato_342824</uri>
+            <name>tomato_342824</name>
+            <pose>0.0 3.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>flowerpot_342824</uri>
+            <name>flowerpot_342824</name>
+            <pose>0.0 3.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>lamp_111027</uri>
+            <name>lamp_111027</name>
+            <pose>0.0 3.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>soilbed_880201</uri>
+            <name>soilbed_880201</name>
+            <pose>0.0 3.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>tomato_204683</uri>
+            <name>tomato_204683</name>
+            <pose>0.0 6.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>flowerpot_204683</uri>
+            <name>flowerpot_204683</name>
+            <pose>0.0 6.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>lamp_133337</uri>
+            <name>lamp_133337</name>
+            <pose>0.0 6.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>soilbed_384276</uri>
+            <name>soilbed_384276</name>
+            <pose>0.0 6.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>metal_311845</uri>
+            <name>metal_311845</name>
+            <pose>3.0 0.5 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>tomato_45154</uri>
+            <name>tomato_45154</name>
+            <pose>3.0 0.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>flowerpot_45154</uri>
+            <name>flowerpot_45154</name>
+            <pose>3.0 0.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>lamp_725498</uri>
+            <name>lamp_725498</name>
+            <pose>3.0 0.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>soilbed_522037</uri>
+            <name>soilbed_522037</name>
+            <pose>3.0 0.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>tomato_512622</uri>
+            <name>tomato_512622</name>
+            <pose>3.0 3.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>flowerpot_512622</uri>
+            <name>flowerpot_512622</name>
+            <pose>3.0 3.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>lamp_139787</uri>
+            <name>lamp_139787</name>
+            <pose>3.0 3.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>soilbed_156988</uri>
+            <name>soilbed_156988</name>
+            <pose>3.0 3.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>tomato_47359</uri>
+            <name>tomato_47359</name>
+            <pose>3.0 6.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>flowerpot_47359</uri>
+            <name>flowerpot_47359</name>
+            <pose>3.0 6.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>lamp_405379</uri>
+            <name>lamp_405379</name>
+            <pose>3.0 6.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>soilbed_697666</uri>
+            <name>soilbed_697666</name>
+            <pose>3.0 6.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>metal_74215</uri>
+            <name>metal_74215</name>
+            <pose>6.0 0.5 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>tomato_372803</uri>
+            <name>tomato_372803</name>
+            <pose>6.0 0.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>flowerpot_372803</uri>
+            <name>flowerpot_372803</name>
+            <pose>6.0 0.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>lamp_146652</uri>
+            <name>lamp_146652</name>
+            <pose>6.0 0.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>soilbed_776804</uri>
+            <name>soilbed_776804</name>
+            <pose>6.0 0.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>tomato_26383</uri>
+            <name>tomato_26383</name>
+            <pose>6.0 3.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>flowerpot_26383</uri>
+            <name>flowerpot_26383</name>
+            <pose>6.0 3.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>lamp_515987</uri>
+            <name>lamp_515987</name>
+            <pose>6.0 3.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>soilbed_910268</uri>
+            <name>soilbed_910268</name>
+            <pose>6.0 3.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>tomato_366331</uri>
+            <name>tomato_366331</name>
+            <pose>6.0 6.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>flowerpot_366331</uri>
+            <name>flowerpot_366331</name>
+            <pose>6.0 6.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>lamp_603129</uri>
+            <name>lamp_603129</name>
+            <pose>6.0 6.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>soilbed_98628</uri>
+            <name>soilbed_98628</name>
+            <pose>6.0 6.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>metal_397350</uri>
+            <name>metal_397350</name>
+            <pose>9.0 0.5 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>tomato_980493</uri>
+            <name>tomato_980493</name>
+            <pose>9.0 0.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>flowerpot_980493</uri>
+            <name>flowerpot_980493</name>
+            <pose>9.0 0.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>lamp_539815</uri>
+            <name>lamp_539815</name>
+            <pose>9.0 0.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>soilbed_194157</uri>
+            <name>soilbed_194157</name>
+            <pose>9.0 0.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>tomato_525650</uri>
+            <name>tomato_525650</name>
+            <pose>9.0 3.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>flowerpot_525650</uri>
+            <name>flowerpot_525650</name>
+            <pose>9.0 3.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>lamp_950352</uri>
+            <name>lamp_950352</name>
+            <pose>9.0 3.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>soilbed_564083</uri>
+            <name>soilbed_564083</name>
+            <pose>9.0 3.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>tomato_93517</uri>
+            <name>tomato_93517</name>
+            <pose>9.0 6.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>flowerpot_93517</uri>
+            <name>flowerpot_93517</name>
+            <pose>9.0 6.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>lamp_966240</uri>
+            <name>lamp_966240</name>
+            <pose>9.0 6.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>soilbed_877083</uri>
+            <name>soilbed_877083</name>
+            <pose>9.0 6.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>metal_800472</uri>
+            <name>metal_800472</name>
+            <pose>12.0 0.5 -0.34 0 0 -1.6</pose>
+        </include>
+        
+        <include>
+            <uri>tomato_694354</uri>
+            <name>tomato_694354</name>
+            <pose>12.0 0.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>flowerpot_694354</uri>
+            <name>flowerpot_694354</name>
+            <pose>12.0 0.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>lamp_125957</uri>
+            <name>lamp_125957</name>
+            <pose>12.0 0.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>soilbed_938160</uri>
+            <name>soilbed_938160</name>
+            <pose>12.0 0.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>tomato_515812</uri>
+            <name>tomato_515812</name>
+            <pose>12.0 3.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>flowerpot_515812</uri>
+            <name>flowerpot_515812</name>
+            <pose>12.0 3.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>lamp_876598</uri>
+            <name>lamp_876598</name>
+            <pose>12.0 3.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>soilbed_650149</uri>
+            <name>soilbed_650149</name>
+            <pose>12.0 3.0 0.4 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>tomato_535818</uri>
+            <name>tomato_535818</name>
+            <pose>12.0 6.0 0.55 0 0 0</pose>
+        </include>
+        
+        <include>
+            <uri>flowerpot_535818</uri>
+            <name>flowerpot_535818</name>
+            <pose>12.0 6.0 0.5 0 0 -1.60</pose>
+        </include>
+        
+        <include>
+            <uri>lamp_862246</uri>
+            <name>lamp_862246</name>
+            <pose>12.0 6.0 2.6 0 3.14159 1.570795</pose>
+        </include>
+        
+        <include>
+            <uri>soilbed_28965</uri>
+            <name>soilbed_28965</name>
+            <pose>12.0 6.0 0.4 0 0 0</pose>
+        </include>
+        
+
+        <include>
+          <uri>model://ground_plane</uri>
+        </include>
+
+        
+    </world>
+</sdf>

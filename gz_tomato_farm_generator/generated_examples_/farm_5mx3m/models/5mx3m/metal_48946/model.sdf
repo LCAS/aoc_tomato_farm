@@ -1,0 +1,27 @@
+<sdf version="1.6">
+  <model name="metal_48946">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>1 1 1</size> 
+          </box>
+        </geometry>
+      </collision>
+      <visual name="metal">
+        <geometry>
+          <mesh>
+            <uri>model://metal_48946/meshes/metal.dae</uri>
+            <scale>0.015 0.015 0.015</scale> 
+          </mesh>
+        </geometry>
+        <material>
+          <diffuse>1.0 1.0 1.0</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+
+  </model>
+</sdf>
