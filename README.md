@@ -1,36 +1,41 @@
 # Tomato Glass House Environment
-This package is a tomato glass house simulator compatible with both Gazebo and Unity in ROS2 for ROS-based agricultural environment part of Agri-open Core (AOC) project. This repository consists of four key parts  
+This package is a tomato glasshouse simulator compatible with both Gazebo and Unity in ROS2 as part of the Agri-open Core (AOC) project. This repository consists of four key parts
 
 1) Random tomato farm generator in Unity
-2) Random tomato glass house generator in Unity
-2) Random tomato glass house generator in Gazebo
-3) Simulator for the generated tomato farms in Unity and Gazebo
+2) Random tomato glasshouse generator in Unity
+3) Random tomato glasshouse generator in Gazebo
+4) Simulator for the generated tomato farms in Unity and Gazebo
 
-Gazebo 
+Gazebo GlassHouse Generator
 
 <img src="docs/GazeboClassic_Farm04.png" width="400" > <img src="docs/GazeboClassic_Farm03.png" width="400" >
 
 <!-- ![Gazebo Classic - Tomato Farm Entire Field](docs/GazeboClassic_Farm01.png?raw=true )
 ![Gazebo Classic - Tomato Farm Close-up View](docs/GazeboClassic_Farm02.png?raw=true )-->
 
-Unity
+Unity Glass House Generator
 
 <!-- ![Gazebo Sim - Tomato Farm Entire Field](docs/GazeboSim_Farm01.png?raw=true )
 ![Gazebo Sim - Tomato Farm Close-up View](docs/GazeboSim_Farm02.png?raw=true )-->
 
 <img src="docs/Unity_Farm01.png" width="400" > <img src="docs/Unity_Farm04.png" width="400" >
 
-<img src="docs/UnityTomatoFarm02.png" width="400" >
-<img src="docs/UnityTomatoFarm01.png" width="400" >
+Unity Tomaro Farm Generator
 
+<img src="docs/UnityTomatoFarm02.png" width="400" ><img src="docs/UnityTomatoFarm01.png" width="400" >
+
+# YouTube Video 
+The next YouTube video shows a group of tomato farm environments generated with our packages. 
+
+https://www.youtube.com/watch?v=lMvnaXLQdTA
 
 # Attention!!!
 
 **Preliminary installation instructions**
 
-Prepare a desktop PC with Ubuntu 22.04 installed. 
+Prepare a desktop PC with Ubuntu 22.04 installed.
 
-Install git
+Install Git:
 ```bash
 sudo apt install git
 ```
@@ -44,9 +49,11 @@ git clone --branch humble-unity-gazebo git@github.com:LCAS/aoc_tomato_farm.git
 git checkout humble-unity-gazebo
 cd ${your_ws} && colcon build
 source install/setup.bash
+cd ${your_ws}/src/aoc_tomato_farm/tomato_farm_generator/scripts/
+jupyter notebook glass_house_generator.ipynb
 ```
 
-Before generate Unity-ROS2 simulations, set the ROS 2 middleware and the localhost only mode in ~/.profile (or, in ~/.bash_profile or ~/bash_login if either of those exists) file: 
+Before generating Unity-ROS2 simulations, set the ROS 2 middleware and the localhost-only mode in the ~/.profile file (or in ~/.bash_profile or ~/.bash_login if either of those exists):
 
 ```bash
 export ROS_LOCALHOST_ONLY=1
@@ -54,7 +61,7 @@ export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 ```
 
 
-# How to Generate a New Glass house Tomato Farm in Gazebo
+# How to Generate a New Glasshouse Tomato Farm in Gazebo
 
 Run Jupyter Notebook
 
@@ -62,65 +69,65 @@ Run Jupyter Notebook
 cd /home/developer/dogtooth_ws/src/aoc_tomato_farm/tomato_farm_generator/scripts/
 jupyter notebook glass_house_generator.ipynb
 ```
+In this file, the farm size, the number of rows, the number of plants in each row, the distance between each plant and each row, the number of greenhouses, and the attenuation of the lights can be adjusted parametrically. Each plant on the farm is generated randomly, including the locations of stems, leaves, fruits, and so on. The generated tomato farm models and world files, both compatible with Gazebo Sim and Gazebo Classic, are saved in the **tomato_farm_generator/generated** folder.
 
-In this file, the farm size, the number of rows, the number of plants in each row, the distance between each plant and each row, the quantity of glass houses and the attenuation of the lights can be parametrically adjusted. Each plant in the farm is generated randomly, including locations of stems, leaves, fruits and so on. The generated tomato farm tomato models and world files, both compatible with Gazebo Sim and Gazebo Classic are saved in **tomato_farm_generator/generated** folder. 
 
 ## How to Use Generated Tomato Farms in Simulation
 
-To use a generated tomato farm in simulation, copy files in **tomato_farm_generator/generated** folder into **tomato_farm_simulator/models** and **tomato_farm_simulator/worlds** folders and modify launch file (tomato_farm_world.launch.py) accordingly.
+To use a generated tomato farm in simulation, copy the files in the **tomato_farm_generator/generated** folder into the **tomato_farm_simulator/models** and **tomato_farm_simulator/worlds** folders, and modify the launch file (tomato_farm_world.launch.py) accordingly.
+
 
 ## Run Gazebo Simulation
 
-Run the following launch file to simulate only Gazebo tomato farm world
+Run the following launch file to simulate only the Gazebo tomato farm world:
 
 ```bash
 ros2 launch tomato_farm_simulator tomato_farm_world.launch.py
 ```
 
 ## Lighting in Gazebo
-In the Gazebo Generator, the lighting condition of the lamps can be adjusted with the **LIGHT_INTENSITY** variable. When the value of this variable increases, the intensity of the light decreases. Big values of **LIGHT_INTENSITY** can generate an environment with a negligible illumination value.
+In the Gazebo Generator, the lighting condition of the lamps can be adjusted with the **LIGHT_INTENSITY** variable, as the value of this variable increases, the intensity of the light diminishes.
 
-# How to Generate a New Glass house Tomato Farm in Unity
+# How to Generate a New Glasshouse Tomato Farm in Unity
 
 ## Unity Setup
-Go to https://unity.com/download and download Unity Hub. Once it is done, install Unity 2022.3.17f1 via Unity Hub.  
+Go to https://unity.com/download and download Unity Hub. Once downloaded, install Unity 2022.3.17f1 via Unity Hub.
 
 ## Add your **unity_tomato_farm_generator** project
+Open Unity Hub and navigate to the projects window. Click the "Add" button. Locate your **aoc_tomato_farm/unity_tomato_farm_generator** project and select it to add it to your Unity Hub and your Unity project will now be displayed in the projects list.
 
-Initialize your Unity Hub, go to the projects window and press the "Add" button. After press "Add" button you will need to find your **aoc_tomato_farm/unity_tomato_farm_generator** and open it. Your unity project will be displayed. 
+In this Unity project, various parameters such as the farm size, the number of rows, the number of plants in each row, the distance between each plant and each row, the number of glasshouses, and the intensity of the lights can be adjusted using a group of public variables. Each plant on the farm is generated randomly, including the locations of stems, leaves, fruits, and more.
 
-In this Unity project , the farm size, the number of rows, the number of plants in each row, the distance between each plant and each row, the quantity of glass houses and the intensity of the lights can be parametrically adjusted with a group of public variables. Each plant in the farm is generated randomly, including locations of stems, leaves, fruits and so on. 
+## Export your Glasshouse tomato farm
+Once customization of your environment has finished, you can see the previsualization of the world in the play mode (pushing the play button) and, finally, export.  Before generating your Unity world, it is necessary to create a new folder in **tomato_farm_simulator/worlds** with the next format ***RowLenght+mx+NumberofRows+mU (8mx4mU, 7mx3mU, 2mx4mU)***. 
+
+To generate your simulation, go to the option ***file*** of the menu and select ***Build Settings...*** In build settings, select button ***build*** and save your project in the folder generated for this special environment with the format ***environment.x86_64***. 
 
 
-## Export your glass house tomato farm
-
-Once customization of your environment has finished, you can see a previsualization of the world in the play mode (pushing play button) and, finally, export.  Before generate your Unity world, it is necessary to create a  new folder in **tomato_farm_simulator/worlds** with the next format ***RowLenght+mx+NumberofRows+mU (8mx4mU, 7mx3mU, 2mx4mU)***. 
-
-To generate your simulation, go to the option ***file*** of the menu and select ***Build Settings...*** In build settings, select  button ***build*** and save your project in the folder generated for this special environment with the format ***environment.x86_64***. 
 
 ## Run Unity Simulation
-To use a generated tomato farm in simulation, you can  modify launch file (unity_Launch.py) accordingly or openinig directly your environment.x86_64 file in **tomato_farm_simulator/worlds/environment.x86_64** folder.  In adittion, you can stay in Unity's play mode all what you want before export your project, it is possible to test your project only using the play mode of Unity. 
+To use a generated tomato farm in simulation, you can modify the launch file (unity_Launch.py) accordingly or open your environment directly.x86_64 file in **tomato_farm_simulator/worlds/environment.x86_64** folder.  In addition, you can stay in Unity's play mode all that you want before exporting your project, it is possible to test your project only using the play mode of Unity. 
 
-### Display both environmets at the same time
+
+### Display both environments at the same time
 You can display both, Unity and Gazebo environments, using **tomato_farm_simulator/worlds/GazeboxUnity.launch.py**
 
-## Switch between Tomato Glass House Generator and tomato farm
-To switch between the kind of glass house to generate, you need to change the value of the varable **environment**, with a value of 0 you generate a glass house and with a value of 1 you generate a normal tomato farm. 
+## Switch between Tomato Glasshouse Generator and Tomato Farm
+To switch between the kind of glass house to generate, you need to change the value of the variable **environment**, with a value of 0 you generate a glass house and with a value of 1, you generate a normal tomato farm. 
 
 
 ## Connect the Unity environment with ROS2
 
-Please refer to the README of "ros2-for-unity" package for setup of communication between the tomato environment and ROS2 and import the package into the asset folder of your ***unity_tomato_farm_generator***. Once ROS2 For Unity is installed, you can modify the example scripts and associate them to your models to interact with your tomato farm environment. 
+Please refer to the README of the "ros2-for-unity" package for the setup of communication between the tomato environment and ROS2 and import the package into the asset folder of your ***unity_tomato_farm_generator***. Once ROS2 For Unity is installed, you can modify the example scripts and associate them with your models to interact with your tomato farm environment. 
 
 https://github.com/RobotecAI/ros2-for-unity
 
 
 
-You can import your models directly to your environment usign 
+You can import your models directly to your environment using 
 "URDF-Importer" package. 
 
 https://github.com/Unity-Technologies/URDF-Importer
-
 
 ## Lighting in Unity
 In the Unity Generator, the lighting condition of the lamps can be adjusted with the **Lamp Intensity** variable. The range of values to generate acceptable light conditions is between 0 and 1, where small values correspond to lower light intensity. 
