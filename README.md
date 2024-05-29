@@ -1,26 +1,26 @@
 # Tomato Glass House Environment
-This package is a tomato glasshouse simulator compatible with both Gazebo and Unity in ROS2 as part of the Agri-open Core (AOC) project. This repository consists of four key parts
+This package is a tomato glasshouse simulator compatible with both **Gazebo** and **Unity** in ROS2 as part of the Agri-open Core (AOC) project. This repository consists of four key parts:
 
 1) Random tomato farm generator in Unity
 2) Random tomato glasshouse generator in Unity
 3) Random tomato glasshouse generator in Gazebo
 4) Simulator for the generated tomato farms in Unity and Gazebo
 
-Gazebo GlassHouse Generator
+**Gazebo GlassHouse Generator**
 
 <img src="docs/GazeboClassic_Farm04.png" width="400" > <img src="docs/GazeboClassic_Farm03.png" width="400" >
 
 <!-- ![Gazebo Classic - Tomato Farm Entire Field](docs/GazeboClassic_Farm01.png?raw=true )
 ![Gazebo Classic - Tomato Farm Close-up View](docs/GazeboClassic_Farm02.png?raw=true )-->
 
-Unity Glass House Generator
+**Unity Glass House Generator**
 
 <!-- ![Gazebo Sim - Tomato Farm Entire Field](docs/GazeboSim_Farm01.png?raw=true )
 ![Gazebo Sim - Tomato Farm Close-up View](docs/GazeboSim_Farm02.png?raw=true )-->
 
 <img src="docs/Unity_Farm01.png" width="400" > <img src="docs/Unity_Farm04.png" width="400" >
 
-Unity Tomaro Farm Generator
+**Unity Tomato Farm Generator**
 
 <img src="docs/UnityTomatoFarm02.png" width="400" ><img src="docs/UnityTomatoFarm01.png" width="400" >
 
@@ -28,6 +28,8 @@ Unity Tomaro Farm Generator
 The next YouTube video shows a group of tomato farm environments generated with our packages. 
 
 https://www.youtube.com/watch?v=lMvnaXLQdTA
+
+[![Tomato Farm/Glasshouse Generator/Simulator](https://img.youtube.com/vi/lMvnaXLQdTA/0.jpg)](https://www.youtube.com/watch?v=lMvnaXLQdTA)
 
 # Attention!!!
 
