@@ -4,8 +4,13 @@
   <name>gz_tomato_farm_generator</name>
   <version>0.0.0</version>
   <description>This package generates tomato farm data.</description>
+  <author email="azazdeaz@gmail.com">azazdeaz</author>
+  <author email="espejel41juan@gmail.com">paul</author>
+  <author email="yilmazabdurrah@itu.edu.tr">ayilmaz</author>
+  
   <maintainer email="espejel41juan@gmail.com">paul</maintainer>
-  <license>BSD</license>
+  
+  <license>MIT</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
