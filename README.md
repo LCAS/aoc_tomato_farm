@@ -64,14 +64,6 @@ ros2 run franka controller -1.57 +0.67 0 0 0 1.3 -2.3 0
 
 <img src="docs/MobileManipulator_in_TomatoFarm_01.png" width="800" >
 
-# Environment Template
-1) Placeholders for specific map files
-2) Generators to construct missing map files
-3) Procedural generation tools for robustness evaluation maps
-4) Compilation setups to make map file references easier
-
-# Public Environment
-To create a publically available environment, create a new branch on a fork of the repository. A PR can be used to include your public environment into the upstream here
 
 # Private Environment
 Some environments may be requested by owners to be kept private. If this is the case, you can create your own repository using the `Use This Template` button, then set your new respository to private. Please note: it is advised you only do this if you must. Pulling updates from a template's source can become tedious and may create problems for your workflow
