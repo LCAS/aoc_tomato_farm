@@ -26,9 +26,9 @@ This package is a tomato farm/glasshouse generator/simulator compatible with bot
 <img src="docs/UnityTomatoFarm02.png" width="400" ><img src="docs/UnityTomatoFarm01.png" width="400" >
 
 ## Video 
-A group of tomato farm environments generated with these packages can be seen [here](https://www.youtube.com/watch?v=lMvnaXLQdTA). 
+A group of tomato farm environments generated with these packages can be seen [here](https://www.youtube.com/watch?v=ZPlkVhX3Sjw). 
 
-[![Tomato Farm/Glasshouse Generator/Simulator](https://img.youtube.com/vi/lMvnaXLQdTA/0.jpg)](https://www.youtube.com/watch?v=lMvnaXLQdTA)
+[![Tomato Farm/Glasshouse Generator/Simulator](https://img.youtube.com/vi/ZPlkVhX3Sjw/0.jpg)](https://www.youtube.com/watch?v=ZPlkVhX3Sjw)
 
 ## References
 
@@ -58,12 +58,10 @@ Clone the repository and build it
 ```bash
 mkdir -p ${your_ws}/src 
 cd ${your_ws}/src
-git clone --branch humble-unity-gazebo git@github.com:LCAS/aoc_tomato_farm.git
-git checkout humble-unity-gazebo
+git clone --branch main git@github.com:LCAS/aoc_tomato_farm.git
+git checkout main
 cd ${your_ws} && colcon build
 source install/setup.bash
-cd ${your_ws}/src/aoc_tomato_farm/tomato_farm_generator/scripts/
-jupyter notebook glass_house_generator.ipynb
 ```
 
 Before generating Unity-ROS2 simulations, set the ROS 2 middleware and the localhost-only mode in the ~/.profile file (or in ~/.bash_profile or ~/.bash_login if either of those exists):
