@@ -6,7 +6,7 @@
   <description>Gazebo tomato farm simulator package </description>
   <maintainer email="yilmazabdurrah@itu.edu.tr">ayilmaz</maintainer>
   <author email="yilmazabdurrah@itu.edu.tr">ayilmaz</author>
-  <license>MIT License</license>
+  <license>MIT</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
