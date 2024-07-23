@@ -21,7 +21,7 @@ def generate_launch_description():
   pkg_share = FindPackageShare(package='tomato_farm_simulator').find('tomato_farm_simulator')
  
   # Set the path to the world file
-  farm = '5mx5m' # Choose the farm model to be used
+  farm = '4mx3m' # Choose the farm model to be used
   #flash_light_plugin_demo.world
   world_file_name = 'tomato_farm_' + farm + '_gazebo_classic.world' # Choose world based on the farm to be desired
   world_path = os.path.join(pkg_share, 'worlds', farm, world_file_name)

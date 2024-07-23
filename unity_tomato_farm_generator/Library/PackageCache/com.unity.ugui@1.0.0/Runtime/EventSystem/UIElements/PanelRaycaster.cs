@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 namespace UnityEngine.UIElements
 {
@@ -66,33 +67,13 @@ namespace UnityEngine.UIElements
             if (m_Panel == null)
                 return;
 
-            var eventPosition = Display.RelativeMouseAt(eventData.position);
             var displayIndex = m_Panel.targetDisplay;
 
-            var originalEventPosition = eventPosition;
-            if (eventPosition != Vector3.zero)
-            {
-                // We support multiple display and display identification based on event position.
+            Vector3 eventPosition = MultipleDisplayUtilities.GetRelativeMousePositionForRaycast(eventData);
 
-                int eventDisplayIndex = (int)eventPosition.z;
-
-                // Discard events that are not part of this display so the user does not interact with multiple displays at once.
-                if (eventDisplayIndex != displayIndex)
-                    return;
-            }
-            else
-            {
-                // The multiple display system is not supported on all platforms, when it is not supported the returned position
-                // will be all zeros so when the returned index is 0 we will default to the event data to be safe.
-                eventPosition = eventData.position;
-#if UNITY_EDITOR
-                if (Display.activeEditorGameViewTarget != displayIndex)
-                    return;
-                eventPosition.z = Display.activeEditorGameViewTarget;
-#endif
-
-                // We don't really know in which display the event occurred. We will process the event assuming it occurred in our display.
-            }
+            // Discard events that are not part of this display so the user does not interact with multiple displays at once.
+            if ((int) eventPosition.z != displayIndex)
+                return;
 
             var position = eventPosition;
             var delta = eventData.delta;
@@ -115,9 +96,7 @@ namespace UnityEngine.UIElements
             if (capturingElement is VisualElement ve && ve.panel != m_Panel)
                 return;
 
-            var capturingPanel = PointerDeviceState.GetPressedButtons(pointerId) != 0 ?
-                                 PointerDeviceState.GetPlayerPanelWithSoftPointerCapture(pointerId) :
-                                 null;
+            var capturingPanel = PointerDeviceState.GetPlayerPanelWithSoftPointerCapture(pointerId);
             if (capturingPanel != null && capturingPanel != m_Panel)
                 return;
 

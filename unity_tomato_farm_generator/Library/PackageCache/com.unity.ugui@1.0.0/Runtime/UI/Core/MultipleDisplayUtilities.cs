@@ -29,6 +29,34 @@ namespace UnityEngine.UI
             return true;
         }
 
+        internal static Vector3 GetRelativeMousePositionForRaycast(PointerEventData eventData)
+        {
+            // The multiple display system is not supported on all platforms, when it is not supported the returned position
+            // will be all zeros so when the returned index is 0 we will default to the event data to be safe.
+            Vector3 eventPosition = RelativeMouseAtScaled(eventData.position);
+            if (eventPosition == Vector3.zero)
+            {
+                eventPosition = eventData.position;
+#if UNITY_EDITOR
+                eventPosition.z = Display.activeEditorGameViewTarget;
+#endif
+                // We don't really know in which display the event occurred. We will process the event assuming it occurred in our display.
+            }
+
+            // We support multiple display on some platforms. When supported:
+            //  - InputSystem will set eventData.displayIndex
+            //  - Old Input System will set eventPosition.z
+            //
+            // If the event is on the main display, both displayIndex and eventPosition.z
+            // will be 0 so in that case we can leave the eventPosition untouched (see UUM-47650).
+#if ENABLE_INPUT_SYSTEM && PACKAGE_INPUTSYSTEM
+            if (eventData.displayIndex > 0)
+                eventPosition.z = eventData.displayIndex;
+#endif
+
+            return eventPosition;
+        }
+
         /// <summary>
         /// A version of Display.RelativeMouseAt that scales the position when the main display has a different rendering resolution to the system resolution.
         /// By default, the mouse position is relative to the main render area, we need to adjust this so it is relative to the system resolution
