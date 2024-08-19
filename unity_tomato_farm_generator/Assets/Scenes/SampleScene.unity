@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -167,8 +166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a55e4403be05de7ec81c52662ce7a04c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tomatoPlant: {fileID: 2247337919012305816, guid: f370600ac8632800db31483bcd1ec68d, type: 3}
-  tomatoPlant2: {fileID: 6251677968877525538, guid: 43ff495a964132fdf8cedab0991dba18, type: 3}
+  branch: {fileID: 5286508585519117346, guid: f370600ac8632800db31483bcd1ec68d, type: 3}
+  branch2: {fileID: 5286508585519117346, guid: f370600ac8632800db31483bcd1ec68d, type: 3}
   optionTomatoes:
   - {fileID: 9221325513592988756, guid: f06385671dc6f1f709d38aab48dfcead, type: 3}
   - {fileID: 9221325513592988756, guid: 083468f18ad03b7cba704a5dfbbd1c84, type: 3}
@@ -178,23 +177,21 @@ MonoBehaviour:
   - {fileID: 5154870744717925781, guid: cffa541eae27c094bb890c6e1545f3db, type: 3}
   - {fileID: 5154870744717925781, guid: fa6a48b0203fba13faca64339541fc06, type: 3}
   - {fileID: 5154870744717925781, guid: e5d036b29dd99a66195fe15c842332b1, type: 3}
-  optionPlants: []
   leaf: {fileID: 5171593241247744090, guid: df6868718a85e1be6ada5c4d8b820f4b, type: 3}
   earth: {fileID: 6178560783025458163, guid: ec9f4e3501540799ba401afd08939f22, type: 3}
-  structure: {fileID: 2028088218115169736, guid: f7d24355fc48d8b1b8bae501763aaa2c, type: 3}
-  lamp: {fileID: 3020939643488595506, guid: 138849016f7d4ecc4a8defb52f117585, type: 3}
-  flowerpot: {fileID: 5691803123795319122, guid: 3a63e583b60dc07da839fa949a4b78ec, type: 3}
-  cubeEarth: {fileID: 2828869535263847325, guid: 73820671e60564622afb073998c44bc4, type: 3}
-  metalSuport: {fileID: 6489228426519156956, guid: 12871cc77688d40d1abf52bb8fa2a4b4, type: 3}
-  Hoja1: {fileID: 2100000, guid: 60618f4bd1f2a709d811b1f8992fc2a8, type: 2}
-  Hoja2: {fileID: 2100000, guid: 6c21bc677ab67b804b72e2acaae1523f, type: 2}
-  rowL: 6
-  n_Rows: 4
-  dPlant: 1
-  dRow: 2
-  lampIntensity: 0.4
+  GlazzingStructure: {fileID: 919132149155446097, guid: f57f579bc8d97f0c6b17086f891977cb, type: 3}
+  IndustrialLamp: {fileID: 3020939643488595506, guid: 138849016f7d4ecc4a8defb52f117585, type: 3}
+  PlantPot: {fileID: 5691803123795319122, guid: 3a63e583b60dc07da839fa949a4b78ec, type: 3}
+  SoilBed: {fileID: 2828869535263847325, guid: 73820671e60564622afb073998c44bc4, type: 3}
+  MetalFrame: {fileID: 6489228426519156956, guid: 12871cc77688d40d1abf52bb8fa2a4b4, type: 3}
+  RowLength: 8
+  NumberOfRows: 8
+  DistanceBetweenPlants: 1
+  DistanceBetweenRows: 1
+  IndustrialLampIntensity: 1
   GlassHouseperline: 1
   linesofGlassHouse: 1
+  environment: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,13 +279,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0.7864787, y: -0.15025808, z: 0.2107362, w: 0.560771}
+  m_LocalPosition: {x: -53.9, y: 40.63, z: -140.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 109.020996, y: -30, z: 0}
 --- !u!1 &831724814
 GameObject:
   m_ObjectHideFlags: 0

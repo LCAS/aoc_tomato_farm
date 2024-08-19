@@ -347,7 +347,7 @@
 -r:"Library/Bee/artifacts/2400b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"/home/juanpa/Unity/Hub/Editor/2022.3.35f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/home/juanpa/Unity/Hub/Editor/2022.3.35f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
-"Assets/Scripts/GeneradorDeEscenario.cs"
+"Assets/Scripts/ScenarioGenerator.cs"
 "Assets/Scripts/cameraController.cs"
 -langversion:9.0
 /deterministic

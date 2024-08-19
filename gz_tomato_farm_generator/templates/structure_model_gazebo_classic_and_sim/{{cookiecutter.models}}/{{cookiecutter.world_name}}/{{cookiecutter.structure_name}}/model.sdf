@@ -1,23 +1,24 @@
+<?xml version="1.0" ?>
 <sdf version="1.6">
   <model name="{{cookiecutter.structure_name}}">
     <static>true</static>
-   
     <link name="link">
       <collision name="collision">
         <geometry>
-          <box>
-            <size>1 1 1</size>
-          </box>
-        </geometry>
-      </collision>
-
-      <visual name= "structure">
-        <geometry>
           <mesh>
-           <uri>model://{{cookiecutter.structure_name}}/meshes/Structure.dae</uri>
+            <scale>1 1 1</scale>
+            <uri>model://{{cookiecutter.structure_name}}/meshes/Structure.stl</uri>
           </mesh>
         </geometry>
-      </visual> 
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://{{cookiecutter.structure_name}}/meshes/Structure.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
     </link>
   </model>
 </sdf>
