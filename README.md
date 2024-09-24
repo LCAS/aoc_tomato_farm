@@ -9,7 +9,7 @@ This package is a tomato farm/glasshouse generator/simulator compatible with bot
 
 ## Gazebo Glasshouse Generator
 
-<img src="docs/GazeboClassic_Farm04.png" width="400" > <img src="docs/GazeboClassic_Farm03.png" width="400" >
+<img src="docs/GazeboClassic_Farm06.png" width="400" > <img src="docs/GazeboClassic_Farm07.png" width="400" >
 
 <!-- ![Gazebo Classic - Tomato Farm Entire Field](docs/GazeboClassic_Farm01.png?raw=true )
 ![Gazebo Classic - Tomato Farm Close-up View](docs/GazeboClassic_Farm02.png?raw=true )-->
@@ -19,7 +19,7 @@ This package is a tomato farm/glasshouse generator/simulator compatible with bot
 <!-- ![Gazebo Sim - Tomato Farm Entire Field](docs/GazeboSim_Farm01.png?raw=true )
 ![Gazebo Sim - Tomato Farm Close-up View](docs/GazeboSim_Farm02.png?raw=true )-->
 
-<img src="docs/Unity_Farm01.png" width="400" > <img src="docs/Unity_Farm04.png" width="400" >
+<img src="docs/Unity_Farm06.png" width="400" > <img src="docs/Unity_Farm07.png" width="400" >
 
 ## Unity Tomato Farm Generator
 
@@ -38,7 +38,7 @@ If you use this project in your research or work, please cite the following pape
 @inproceedings{flores2024,
 author = {Espejel Flores, Juan Pablo and Yilmaz, Abdurrahman and Soriano Avendaño, Luis Arturo and Cielniak, Grzegorz},
 title = {Comparative Analysis of Unity and Gazebo Simulators for Digital Twins of Robotic Tomato Harvesting Scenarios},
-booktitle = {submitted to Towards Autonomous Robotic Systems (TAROS 2024)},
+booktitle = {Towards Autonomous Robotic Systems (TAROS 2024)},
 year = {2024},
 doi = {DOI}
 }
@@ -134,4 +134,3 @@ To display both Unity and Gazebo environments, run the following launch file.
 ros2 launch tomato_farm_simulator GazeboxUnity.launch.py
 ```
 
-**PS:** **Glasshouse outer glazing structure** model in the simulations can be purchased from [here](https://www.cgtrader.com/3d-models/architectural/other/hydroponic-greenhouse). We couldn't share it here due to license restrictions.
