@@ -28,7 +28,7 @@ This package is a tomato farm/glasshouse generator/simulator compatible with bot
 ## Video 
 A group of tomato farm environments generated with these packages can be seen [here](https://www.youtube.com/watch?v=0qz05lMiEwg). 
 
-[![Tomato Farm/Glasshouse Generator/Simulator](https://img.youtube.com/vi/0qz05lMiEwg/0.jpg)](https://www.youtube.com/watch?v=0qz05lMiEwg)
+[![Tomato Farm/Glasshouse Generator/Simulator](https://img.youtube.com/vi/0qz05lMiEwg/10.jpg)](https://www.youtube.com/watch?v=0qz05lMiEwg)
 
 ## References
 
