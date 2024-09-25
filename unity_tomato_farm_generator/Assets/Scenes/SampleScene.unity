@@ -179,16 +179,16 @@ MonoBehaviour:
   - {fileID: 5154870744717925781, guid: e5d036b29dd99a66195fe15c842332b1, type: 3}
   leaf: {fileID: 5171593241247744090, guid: df6868718a85e1be6ada5c4d8b820f4b, type: 3}
   earth: {fileID: 6178560783025458163, guid: ec9f4e3501540799ba401afd08939f22, type: 3}
-  GlazzingStructure: {fileID: 919132149155446097, guid: f57f579bc8d97f0c6b17086f891977cb, type: 3}
+  GlazzingStructure: {fileID: 8988533258574687043, guid: 5b4265e2b0fcf08d2907cd00385981e7, type: 3}
   IndustrialLamp: {fileID: 3020939643488595506, guid: 138849016f7d4ecc4a8defb52f117585, type: 3}
   PlantPot: {fileID: 5691803123795319122, guid: 3a63e583b60dc07da839fa949a4b78ec, type: 3}
   SoilBed: {fileID: 2828869535263847325, guid: 73820671e60564622afb073998c44bc4, type: 3}
   MetalFrame: {fileID: 6489228426519156956, guid: 12871cc77688d40d1abf52bb8fa2a4b4, type: 3}
-  RowLength: 8
-  NumberOfRows: 8
-  DistanceBetweenPlants: 1
-  DistanceBetweenRows: 1
-  IndustrialLampIntensity: 1
+  RowLength: 1
+  NumberOfRows: 1
+  DistanceBetweenPlants: 2
+  DistanceBetweenRows: 2
+  IndustrialLampIntensity: 0
   GlassHouseperline: 1
   linesofGlassHouse: 1
   environment: 0
@@ -311,8 +311,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 831724814}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.64, y: 1.7198794, z: -14.782644}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.640007, y: 1.719883, z: -14.782623}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -420,6 +420,6 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 831724815}
   - {fileID: 705507995}
   - {fileID: 628950409}
-  - {fileID: 831724815}
