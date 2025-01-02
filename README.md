@@ -32,7 +32,7 @@ A group of tomato farm environments generated with these packages can be seen [h
 
 ## References
 
-If you use this project in your research or work, please cite the following paper:
+If you use this project in your research or work, please cite the following [paper](https://link.springer.com/chapter/10.1007/978-3-031-72059-8_2):
 
 ```
 @inproceedings{flores2024,
@@ -40,7 +40,7 @@ author = {Espejel Flores, Juan Pablo and Yilmaz, Abdurrahman and Soriano Avenda√
 title = {Comparative Analysis of Unity and Gazebo Simulators for Digital Twins of Robotic Tomato Harvesting Scenarios},
 booktitle = {Towards Autonomous Robotic Systems (TAROS 2024)},
 year = {2024},
-doi = {DOI}
+doi = {10.1007/978-3-031-72059-8_2}
 }
 ```
 
