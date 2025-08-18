@@ -19,6 +19,8 @@ setup(
         ('share/' + package_name, ['package.xml']),
         #Add all xacro and URDF files that descripe the robot to the share directory
         (os.path.join('share',package_name,'description'),glob('description/*.xacro')),
+        (os.path.join('share',package_name,'srdf'),glob('srdf/*.srdf')),
+        (os.path.join('share',package_name,'srdf'),glob('srdf/*.xacro')),
         #Adding visual and collision meshes to the share directory
         (os.path.join('share',package_name,'meshes','visual'),glob('meshes/visual/*.dae')),
         (os.path.join('share',package_name,'meshes','collision'),glob('meshes/collision/*.stl')),
