@@ -3,7 +3,7 @@
     
     <xacro:arg name="spawn_manipulator" default="true"/>
     
-    <xacro:arg name="spawn_mobile_robot" default="true"/>
+    <xacro:arg name="spawn_mobile_robot" default="false"/>
     
     <xacro:if value="$(arg spawn_mobile_robot)">
         <xacro:if value="$(arg spawn_manipulator)">
