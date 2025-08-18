@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="rgbd_camera">
     
-    <xacro:macro name="rgbd_camera" params="connected_to:='' rpy:='0 -1.57 0' xyz:='0 0 0' ">
+    <xacro:macro name="rgbd_camera" params="connected_to:='' rpy:='0 -1.57 0' xyz:='0 0 0.112' ">
         <xacro:unless value="${connected_to == ''}">
             <joint name="tip_camera_joint" type="fixed">
                 <parent link="${connected_to}" />

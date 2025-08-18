@@ -12,6 +12,8 @@
             <joint_name>panda_joint5</joint_name>
             <joint_name>panda_joint6</joint_name>
             <joint_name>panda_joint7</joint_name>
+            <joint_name>panda_finger_joint1</joint_name>
+            <joint_name>panda_finger_joint2</joint_name>
         </plugin>
     </gazebo>
     <xacro:property name="robot_name" value="panda" />

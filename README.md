@@ -64,6 +64,21 @@ ros2 run franka controller -1.57 +0.67 0 0 0 1.3 -2.3 0
 
 <img src="docs/MobileManipulator_in_TomatoFarm_01.png" width="800" >
 
+# Run Moveit Example
+
+Run the following launch file to simulate manipulator in Gazebo tomato farm world
+
+```bash
+ros2 launch aoc_tomato_farm_gazebo tomato_farm_world_mobile_manipulator_001.launch.py
+```
+
+Run the following launch file to run moveit2 for franka arm
+
+```bash
+ros2 launch panda_moveit_config gazebo_control.launch.py
+```
+Plan and execute a path from RViz and see both arm moves in RViz and Gazebo Classic
+
 # Environment Template
 1) Placeholders for specific map files
 2) Generators to construct missing map files
