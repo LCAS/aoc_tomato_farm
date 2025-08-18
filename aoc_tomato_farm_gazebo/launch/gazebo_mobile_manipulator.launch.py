@@ -81,6 +81,13 @@ def generate_launch_description():
         arguments=["joint_trajectory_controller", '-c', '/controller_manager'],
         output="screen",
     )
+    
+    spawn_gripper_trajectory_controller = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["gripper_trajectory_controller", '-c', '/controller_manager'],
+        output="screen",
+    )
 
     # Make sure spawn_dogtooth_velocity_controller starts after spawn_joint_state_broadcaster
     diffdrive_controller_spawn_callback = RegisterEventHandler(
@@ -132,6 +139,7 @@ def generate_launch_description():
     ld.add_action(node_robot_state_publisher)
     ld.add_action(spawn_joint_state_broadcaster)
     ld.add_action(spawn_joint_trajectory_controller)
+    ld.add_action(spawn_gripper_trajectory_controller)
     ld.add_action(diffdrive_controller_spawn_callback)
     ld.add_action(gzserver)
     ld.add_action(gzclient)
